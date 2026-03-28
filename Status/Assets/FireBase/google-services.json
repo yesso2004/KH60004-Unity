@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "198547913584",
+    "firebase_url": "https://status-cac7c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "status-cac7c",
+    "storage_bucket": "status-cac7c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198547913584:android:5a7b7ecd3c73470b5d2db5",
+        "android_client_info": {
+          "package_name": "com.SeifDev.Status"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmFPRa5NIbyQboKGorrFZ94VqX-t14yh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
