@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "198547913584",
+    "firebase_url": "https://status-cac7c-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "status-cac7c",
     "storage_bucket": "status-cac7c.firebasestorage.app"
   },

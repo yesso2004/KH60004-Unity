@@ -52,33 +52,35 @@
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Loader.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\TestScript.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Loader.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\FireBase\FirebaseApp\Internal\HttpHelpers.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\InternetAvailabilityChecker.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Toast.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Popup.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Popup.cs" />
     <Compile Include="Assets\FireBase\FirebaseApp\Internal\FirebaseInterops.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\SafeAreaFitter.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\InternetAvailabilityChecker.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\ScreenTransition.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\Toast.cs" />
+    <Compile Include="Assets\Imports\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\ScreenTransition.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
@@ -87,10 +89,9 @@
     <Compile Include="Assets\Scripts\Options\TransitionOptionMenu.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\Options\QuitBtn.cs" />
+    <Compile Include="Assets\Scripts\RegistrationForm\FireBaseAuthManager.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\TestScript.cs" />
-    <Compile Include="Assets\Brainforgegames\Mobile_UX_Toolkit\Runtime\Scripts\SafeAreaFitter.cs" />
     <Compile Include="Assets\Scripts\RegistrationForm\ReturnToOptions.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -99,6 +100,7 @@
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Fonts\Unity - OFL.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\FireBase\google-services.json" />
     <None Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - AFL.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -108,18 +110,18 @@
     <None Include="Assets\FireBase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\StreamingAssets\google-services-desktop.json" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\StreamingAssets\google-services-desktop.json" />
     <None Include="Assets\Imports\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\FireBase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\FireBase\google-services.json" />
     <None Include="Assets\Imports\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\FireBase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Imports\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Imports\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
@@ -571,6 +573,9 @@
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>C:\Users\medoo\OneDrive\Desktop\Status\Assets\FireBase\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>C:\Users\medoo\OneDrive\Desktop\Status\Assets\FireBase\Plugins\Firebase.Database.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
