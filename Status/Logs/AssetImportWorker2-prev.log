@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-03-28T09:52:10.8715468Z"
 OS: 'Windows 11  (10.0.26100) Professional' Language: 'en' Physical Memory: 16091 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-03-30T21:16:38.8525024Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-28T09:52:10Z
+Date: 2026-03-30T21:16:38Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/medoo/OneDrive/Desktop/Status
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-40790
+41954
 -licensingIpc
 LicenseClient-medoo
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/medoo/OneDrive/Desktop/Status
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [32188]  Target information:
+Player connection [29980]  Target information:
 
-Player connection [32188]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 1438554712 [EditorId] 1438554712 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [29980]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 3135616058 [EditorId] 3135616058 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32188] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [32188] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [29980] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29980] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,27 +85,39 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 31.30 ms, found 6 plugins.
-Initialize engine version: 6000.4.0f1 (8cf496087c8f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/medoo/OneDrive/Desktop/Status/Assets
-Forcing GfxDevice: Direct3D 12
-GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Active build profile path: `Assets/Settings/Build Profiles/Status.asset`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-medoo"
 [Licensing::IpcConnector] LicenseClient-medoo channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-03-28T09:52:11.74885Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-03-30T21:16:39.7114004Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              01fab315b5f341f08b2ccb08fc81ed5f
-  Correlation Id:          dabb147a20f1a90830790460785204cb
-  External correlation Id: 1603694422898279757
+  Session Id:              1c7a7a4b4fe44f92978efe26e4b37d67
+  Correlation Id:          ea24a8b51cce31521844ba60f3fa8b2c
+  External correlation Id: 6194771815220431981
   Machine Id:              agf7rBPk51ccx3CzQra/GLhDOyE=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.01s, validation: 0.00s, handshake: 0.79s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-03-28T09:52:12.5399971Z"
-[Licensing::Module] Licensing Background thread has ended after 1.67s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.79s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-03-30T21:16:40.501532Z"
+[Licensing::Module] Licensing Background thread has ended after 1.65s
+[Licensing::Module] Licensing is initialized (took 1.16s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 11270634123586-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Got setting from build profile YAML, name `m_BuildTarget`, value `13`
+Got setting from build profile YAML, name `m_Subtarget`, value `0`
+Refreshing native plugins compatible for Editor in 17.03 ms, found 7 plugins.
+Initialize engine version: 6000.4.0f1 (8cf496087c8f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/medoo/OneDrive/Desktop/Status/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
     Version:         Direct3D 12 [level 12.2]
@@ -114,30 +126,31 @@ Direct3D:
     VRAM:            7957 MB
     App VRAM Budget: 7189 MB
     Driver:          32.0.15.8186
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
 CodeReloadManager initialized
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 11270634123586-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.005998 seconds.
+Registered in 0.021642 seconds.
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 269 ms
+Android Extension - Scanning For ADB Devices 251 ms
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -145,28 +158,68 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.698 seconds
-Domain Reload Profiling: 1138ms
-	BeginReloadAssembly (125ms)
+- Finished resetting the current domain, in  0.764 seconds
+Domain Reload Profiling: 1269ms
+	BeginReloadAssembly (144ms)
 	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (192ms)
-		LoadAssemblies (123ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (178ms)
-				TypeCache.ScanAssembly (166ms)
-	FinalizeReload (699ms)
+	initialDomainReloadingComplete (86ms)
+	LoadAllAssembliesAndSetupDomain (228ms)
+		LoadAssemblies (139ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (217ms)
+				TypeCache.ScanAssembly (198ms)
+	FinalizeReload (764ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (365ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (102ms)
-			ProcessInitializeOnLoadMethodAttributes (88ms)
+			InitializePlatformSupportModulesInManaged (357ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Begin MonoManager ReloadAssembly
+Got setting from build profile YAML, name `m_Development`, value `1`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
+Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 [Licensing::Client] Successfully resolved entitlement details
+Could not open file C:/Users/medoo/OneDrive/Desktop/Status/Library/BuildProfiles/PlatformProfile.b9b35072a6f44c2e863f17467ea3dc13.asset for read
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.Build.Profile.BuildProfileContext:SaveBuildProfileInProject (UnityEditor.Build.Profile.BuildProfile)
+UnityEditor.Build.Profile.BuildProfileContext:OnDisable ()
+
+[C:\build\output\unity\unity\Runtime\File\OpenFileCache.cpp line 61]
+
+Assertion failed on expression: 'res'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.Build.Profile.BuildProfileContext:SaveBuildProfileInProject (UnityEditor.Build.Profile.BuildProfile)
+UnityEditor.Build.Profile.BuildProfileContext:OnDisable ()
+
+[C:\build\output\unity\unity\Runtime\Serialize\SerializationCaching\FileCacherRead.cpp line 170]
+
+Unknown error occurred while loading 'Library/BuildProfiles/PlatformProfile.b9b35072a6f44c2e863f17467ea3dc13.asset'.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.Build.Profile.BuildProfileContext:SaveBuildProfileInProject (UnityEditor.Build.Profile.BuildProfile)
+UnityEditor.Build.Profile.BuildProfileContext:OnDisable ()
+
+[ line 0]
+
 Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
@@ -210,7 +263,7 @@ Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 3.02 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 5.85 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -222,107 +275,75 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.820 seconds
-Domain Reload Profiling: 3513ms
-	BeginReloadAssembly (189ms)
-		DisableScriptedObjects (6ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (151ms)
-	LoadAllAssembliesAndSetupDomain (1306ms)
-		LoadAssemblies (1009ms)
-		AnalyzeDomain (399ms)
-			TypeCache.Refresh (268ms)
-				TypeCache.ScanAssembly (244ms)
-			BuildScriptInfoCaches (117ms)
+- Finished resetting the current domain, in 11.284 seconds
+Domain Reload Profiling: 24809ms
+	BeginReloadAssembly (12357ms)
+		DisableScriptedObjects (11595ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (152ms)
+	LoadAllAssembliesAndSetupDomain (955ms)
+		LoadAssemblies (687ms)
+		AnalyzeDomain (364ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (209ms)
+			BuildScriptInfoCaches (113ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (1821ms)
+	FinalizeReload (11284ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			BeforeProcessingInitializeOnLoad (258ms)
-			ProcessInitializeOnLoadAttributes (520ms)
-			ProcessInitializeOnLoadMethodAttributes (796ms)
-			AfterProcessingInitializeOnLoad (8ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 6.20 ms, found 6 plugins.
+			InitializePlatformSupportModulesInManaged (15ms)
+			BeforeProcessingInitializeOnLoad (244ms)
+			ProcessInitializeOnLoadAttributes (7100ms)
+			ProcessInitializeOnLoadMethodAttributes (3674ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 10.65 ms, found 7 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8775 unused Assets / (4.9 MB). Loaded Objects now: 9609.
-Memory consumption went from 183.4 MB to 178.4 MB.
-Total: 10.277500 ms (FindLiveObjects: 1.671500 ms CreateObjectMapping: 0.429400 ms MarkObjects: 5.408500 ms  DeleteObjects: 2.765000 ms)
+Unloading 8860 unused Assets / (3.0 MB). Loaded Objects now: 9634.
+Memory consumption went from 182.8 MB to 179.8 MB.
+Total: 10.178900 ms (FindLiveObjects: 1.819100 ms CreateObjectMapping: 0.697200 ms MarkObjects: 5.870900 ms  DeleteObjects: 1.789700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2942423.226542 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/Popup.cs
-  importAddress: Guid(fae2f001d249c4a76977fcf11c6c418e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/Popup.cs using Guid(fae2f001d249c4a76977fcf11c6c418e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c56e02d2c86040db14109db6e6c7b495') in 0.0721864 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa7187018d3e598626077a6624752005 DependenciesID=ee2521bec5b820d497428e061000df12 StaticDependenciesID=49ae61e4090caceb07865645f1bf7ba7 
+  Time since last request: 3156332.963936 seconds.
+  path: Assets/Scripts/FireBase/FireBaseAuthManager.cs
+  importAddress: Guid(c1718fd30420ea246a9a2bed45e39789) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/FireBase/FireBaseAuthManager.cs using Guid(c1718fd30420ea246a9a2bed45e39789) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52a75c7e00106e71cf44bd7094c5e111') in 0.5023956 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=287fa46f4b4cb947c90890b2bebd41c6 DependenciesID=9dfef1d3c1fbc93beca250d11c3fa490 StaticDependenciesID=c80f5e809b030169fb33b7942b04eb5c 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Art
-  importAddress: Guid(268f363dcd8824e61842d99729ef0176) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Art using Guid(268f363dcd8824e61842d99729ef0176) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'af76299a7c8db4d8c6c5c2a7df03353d') in 0.0261881 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02bb87e6b0c77c9d5952143d2efdc70e DependenciesID=8985d77cd57324e91da26434ab0cda40 StaticDependenciesID=2816d2dbc7c76802667d4c4bb459c9f0 
+  Time since last request: 0.000038 seconds.
+  path: Assets/Plugins/Android/mainTemplate.gradle
+  importAddress: Guid(f8ebaa279d3a32348904b9813c561675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins/Android/mainTemplate.gradle using Guid(f8ebaa279d3a32348904b9813c561675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '33efb321e4166fa49b64b1d8021e4836') in 0.0202125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=73c2cd10706bbcecaea08cf0b7fc1c3e DependenciesID=f0e4bb42c51042dbad7ddab3a516ab23 StaticDependenciesID=e7ac5250613fbf984a29f964a61527db 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/SafeAreaFitter.cs
-  importAddress: Guid(47b56589587ca4f94a91df5284b59933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/SafeAreaFitter.cs using Guid(47b56589587ca4f94a91df5284b59933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4e1d428e49d5e0d32d2f8ee2b9293736') in 0.0140854 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da2c1e431d09374d749088fecdfd61dc DependenciesID=493078018349734e9758b8b2fdc6ada4 StaticDependenciesID=0e6b9ce87e4ea78378888ad345981e42 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/InternetAvailabilityChecker.cs
-  importAddress: Guid(7e4120465a72b49f4a3331213b5a6224) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/InternetAvailabilityChecker.cs using Guid(7e4120465a72b49f4a3331213b5a6224) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'edab07c9c9fc550aec94d06de3a53c48') in 0.0198541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=339acf7db0a241174ea3ea21c0790e05 DependenciesID=70a6be8481558a6012160d59022a2eb3 StaticDependenciesID=c5e366f0905931e3d0643c5797de306d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/Toast.cs
-  importAddress: Guid(b6eb44d8f1984474785c9625055aa91a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/Toast.cs using Guid(b6eb44d8f1984474785c9625055aa91a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '40837f377fe072981275bbec9b41a86c') in 0.016016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86a7bdc8828ab75917a49f5e21dec742 DependenciesID=8904f941a768057c1c8d50b523bd43e7 StaticDependenciesID=b333ad10c300d39b7282e3b3d8f95582 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Samples/Scenes/MobileUX_Demo.unity
-  importAddress: Guid(32e2a4ba722294480bb2eb399d1b36ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Samples/Scenes/MobileUX_Demo.unity using Guid(32e2a4ba722294480bb2eb399d1b36ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '40262dd02ead18b729e1eee3eb756f77') in 0.0360329 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3a798d5f4beec553b1f8eeaef58dbde4 DependenciesID=cc83e2c0bf9f21df8c4e20c01af3616b StaticDependenciesID=066bd3f5e82b507adcedbb8dc61b0bfc 
+  Time since last request: 0.000035 seconds.
+  path: Assets/Settings/UniversalRP.asset
+  importAddress: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b921b5e32ed43f55a2261a32a9aeadd9') in 0.1080271 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=880538261246916705b906d366b880f0 DependenciesID=d15996a30fa56f059fff7d7a8efaaef4 StaticDependenciesID=df96080b3d0a6a63d34e5e69776bb870 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/Imports/Brainforgegames
-  importAddress: Guid(33bbcdc0ff58d46dd9288e9611f4dca2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames using Guid(33bbcdc0ff58d46dd9288e9611f4dca2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c14a13ee03b86cb172f504c86be9161a') in 0.01754 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb087dea45369e4e4d69c9e2faffa748 DependenciesID=6b72954c96b9b92936ae96e5f1f47370 StaticDependenciesID=eba9526e0d7764a2292d9bf7e0c602ec 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/ScreenTransition.cs
-  importAddress: Guid(7a14c89c1872a4e5bb665b26c51e2ceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Imports/Brainforgegames/Mobile_UX_Toolkit/Runtime/Scripts/ScreenTransition.cs using Guid(7a14c89c1872a4e5bb665b26c51e2ceb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c5f3435f4bc823de3f707ffd6f8b86dd') in 0.0205491 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d06340aad6d4dc595c0ffcde7754b3f3 DependenciesID=64704fe56f6b2448c187ed0f79c1a3eb StaticDependenciesID=8e8075280de30804c0d250a4ba170547 
+  path: Assets/Scripts/FireBase/FireBaseAuthManager.cs
+  importAddress: Guid(c1718fd30420ea246a9a2bed45e39789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FireBase/FireBaseAuthManager.cs using Guid(c1718fd30420ea246a9a2bed45e39789) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '62a7170210660a30f8c1d09a9d6fe8c2') in 0.0007864 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57b8f7ac8e83e6f802372a04d73185ed DependenciesID=575128047d483ef2eca01683620da16d StaticDependenciesID=28575defe91be6443ad222682caaf431 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/StreamingAssets/google-services-desktop.json
-  importAddress: Guid(9f456e4385acddd438a28cd8a9ed0a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/StreamingAssets/google-services-desktop.json using Guid(9f456e4385acddd438a28cd8a9ed0a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '55e6dfdb29eedef9a93ad4103dcca1a4') in 0.0199529 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9cf48499c438791db5497429c970926c DependenciesID=6b32fca87bce38708f51ac976630a3b3 StaticDependenciesID=a57cea0f09402f449c2a798bd7d8b8fc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/Android/FirebaseApp.androidlib
+  importAddress: Guid(cd8ce11b04da45142a1752115bca2e49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins/Android/FirebaseApp.androidlib using Guid(cd8ce11b04da45142a1752115bca2e49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '84109bfc1b9be88693d4473d94585a9f') in 0.0234254 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e58fe4ce0858317cafa49877f7357ed DependenciesID=ac42acc18dd00917b654505dd01574ac StaticDependenciesID=6aa372cc1dd849c8af6d300330448686 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
