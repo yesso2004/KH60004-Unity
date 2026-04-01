@@ -5,6 +5,7 @@ using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Extensions;
 using TMPro;
+using UnityEditor.VersionControl;
 
 public class FireBaseAuthManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ private DatabaseReference DBRef;
 [SerializeField] private GameObject PlayMenu;
 [SerializeField] private GameObject SuccessScreen;
 
+[SerializeField] private TextMeshProUGUI DisplayName; 
     private void ClearRegistration()
     {
     RegistrationName.text = "";
@@ -119,61 +121,80 @@ private DatabaseReference DBRef;
             UserDB.Child("Losses").SetValueAsync(0);
             
             StartCoroutine(FadeManager.Instance.FadeOut(RegisterPanel));
-            StartCoroutine(SuccessScreenTransition(SuccessScreen));
+            StartCoroutine(FadeManager.Instance.SuccessScreenTransition(SuccessScreen));
             StartCoroutine(FadeManager.Instance.FadeIn(SelectPanel));
         });
-
     }
 
      public void SignIn()
     {
-        var SignInTask = Auth.SignInWithEmailAndPasswordAsync(
+        Auth.SignInWithEmailAndPasswordAsync(
             EmailSignIn.text.Trim(),
             PasswordSignIn.text.Trim()
-        );
-
-        if (SignInTask.Exception != null)
+        ).ContinueWithOnMainThread(Task =>
         {
-            FirebaseException FBE = SignInTask.Exception.GetBaseException() as FirebaseException;
-            AuthError Error = (AuthError)FBE.ErrorCode;
-
-            string FailedMessage = "Sign-In Failed due to ";
-
-            switch (Error)
+            if (Task.IsFaulted)
             {
-                case AuthError.InvalidEmail:
-                    FailedMessage += "Invalid Email Address";
-                    SignInWarningMessage.text = FailedMessage;
-                    ClearSignIn();
-                    break;
-                case AuthError.WrongPassword:
-                    FailedMessage += "Wrong Password";
-                    SignInWarningMessage.text = FailedMessage;
-                    ClearSignIn();
-                    break;
-                case AuthError.MissingEmail:
-                    FailedMessage += "Missing Email";
-                    SignInWarningMessage.text = FailedMessage;
-                    ClearSignIn();
-                    break;
-                case AuthError.MissingPassword:
-                    FailedMessage += "Missing Password";
-                    SignInWarningMessage.text = FailedMessage;
-                    ClearSignIn();
-                    break;
-                default:
-                    FailedMessage += FBE.Message;
-                    SignInWarningMessage.text = FailedMessage;
-                    ClearSignIn();
-                    break;
-            }
+                if (Task.Exception != null)
+                {
+                    FirebaseException FBE = Task.Exception.GetBaseException() as FirebaseException;
+                    AuthError Error = (AuthError)FBE.ErrorCode;
 
-            Debug.Log(FailedMessage);
-            return;
-        }
-        Debug.Log("Successfully logged in!");
-        StartCoroutine(FadeManager.Instance.FadeOut(SignInPanel));
-        StartCoroutine(FadeManager.Instance.FadeIn(PlayMenu));
+                    string FailedMessage = "Sign-In Failed due to ";
+
+                    switch (Error)
+                    {
+                        case AuthError.InvalidEmail:
+                            FailedMessage += "Invalid Email Address";
+                            SignInWarningMessage.text = FailedMessage;
+                            ClearSignIn();
+                            break;
+                        case AuthError.WrongPassword:
+                            FailedMessage += "Wrong Password";
+                            SignInWarningMessage.text = FailedMessage;
+                            ClearSignIn();
+                            break;
+                        case AuthError.MissingEmail:
+                            FailedMessage += "Missing Email";
+                            SignInWarningMessage.text = FailedMessage;
+                            ClearSignIn();
+                            break;
+                        case AuthError.MissingPassword:
+                            FailedMessage += "Missing Password";
+                            SignInWarningMessage.text = FailedMessage;
+                            ClearSignIn();
+                            break;
+                        default:
+                            FailedMessage += FBE.Message;
+                            SignInWarningMessage.text = FailedMessage;
+                            ClearSignIn();
+                            break;
+                    }
+                    Debug.Log(FailedMessage);
+                    return;
+                }
+            }
+            FirebaseUser User = Task.Result.User;
+            string UserID = User.UserId;
+            DBRef.Child("user").Child(User.UserId).GetValueAsync().ContinueWithOnMainThread(DBTask =>
+            {
+                if (DBTask.IsCompleted)
+                {
+                    DataSnapshot snapshot = DBTask.Result;
+                    DisplayName.text = snapshot.Child("Username").Value.ToString();
+                    Debug.Log("Successfully Retrieved!: "+snapshot.Child("Username").Value.ToString());
+                }
+                else if (DBTask.IsFaulted || DBTask.IsCanceled)
+                {
+                    Debug.Log("Failed to retrieve user data");
+                    SignInWarningMessage.text = "Failed to retrieve user data";
+                    ClearSignIn();
+                }
+            });
+            Debug.Log("Successfully logged in : " + UserID);
+            StartCoroutine(FadeManager.Instance.FadeOut(SignInPanel));
+            StartCoroutine(FadeManager.Instance.FadeIn(PlayMenu));
+        });
     }
 
         public void SignOut()
@@ -181,38 +202,8 @@ private DatabaseReference DBRef;
             Auth.SignOut();
             ClearRegistration();
             ClearSignIn();
-        }
-
-        IEnumerator SuccessScreenTransition(GameObject Panel)
-        { 
-            
-            Panel.SetActive(true);
-            
-            CanvasGroup PanelCG = Panel.GetComponent<CanvasGroup>();
-            float Speed = 1.5f;
-    
-            while (PanelCG.alpha < 1f)
-            {
-                PanelCG.alpha += Speed * Time.deltaTime;
-                yield return null;
-            }
-    
-            PanelCG.interactable = true;
-            yield return null;
-            PanelCG.blocksRaycasts = true;
-            yield return new WaitForSeconds(1);
-    
-            while (PanelCG.alpha > 0f)
-            {
-                PanelCG.alpha -= Speed * Time.deltaTime;
-                yield return null;
-            }
-            PanelCG.interactable = false;
-            yield return null;
-            PanelCG.blocksRaycasts = false;
-            yield return null;
-            
-            Panel.SetActive(false);
+            StartCoroutine(FadeManager.Instance.FadeOut(PlayMenu));
+            StartCoroutine(FadeManager.Instance.FadeIn(SelectPanel));
         }
         
 }
