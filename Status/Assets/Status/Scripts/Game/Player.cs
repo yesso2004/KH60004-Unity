@@ -3,6 +3,13 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
+public enum Role
+{
+    Unemployed,
+    Employed,
+    Entrepreneur
+}
+
 public class Player:MonoBehaviour
 {
     public string Name;
@@ -10,7 +17,7 @@ public class Player:MonoBehaviour
     public int Losses;
     public int StatusPoints;
     public List<Card> Hand =  new List<Card>();
-    public string CurrentRole = "Unemployed";
+    public Role CurrentRole = Role.Unemployed;
 
     
     public void InitialDraw()

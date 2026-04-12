@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Collections;using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        Shuffle();
     }
 
     public void Game()
@@ -49,6 +50,17 @@ public class GameManager : MonoBehaviour
         
         return DrawnCard;
     }
-    
+
+    public void Shuffle()
+    {
+        for (int i = 0; i < Deck.Count; i++)
+        {
+            Card ShuffledCard = Deck[i];
+            int RandomIndex = Random.Range(i, Deck.Count);
+            Deck[i] = Deck[RandomIndex];
+            Deck[RandomIndex] = ShuffledCard;
+        }
+    }
     
 }
+
