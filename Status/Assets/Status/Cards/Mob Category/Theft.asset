@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ddefa89cac5d874e8e635a93464f62e, type: 3}
+  m_Name: Theft
+  m_EditorClassIdentifier: Assembly-CSharp::Theft
+  CardName: Theft
+  CardDescription: Player can steal a random card from his rival.
+  CardType: 0
+  CardSprite: {fileID: -7895229596764948996, guid: 28a0fb3fec78fd4448612941dd37d650, type: 3}
+  CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

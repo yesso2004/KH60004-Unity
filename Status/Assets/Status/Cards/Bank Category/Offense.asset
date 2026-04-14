@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2312cbb19ac554cb22783de6a39ec8, type: 3}
+  m_Name: Offense
+  m_EditorClassIdentifier: Assembly-CSharp::Offense
+  CardName: Offense
+  CardDescription: there is a 50% chance that the Offense penalty will be 100 SP
+    and another 50% chance that the penalty will be 300 SP
+  CardType: 2
+  CardSprite: {fileID: 3492811925869965768, guid: 6ae2bc5dec2ba424292756b2b1d23bdb, type: 3}
+  CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

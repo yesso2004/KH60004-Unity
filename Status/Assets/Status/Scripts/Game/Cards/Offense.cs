@@ -5,6 +5,6 @@ public class Offense : Card
 { 
     public override void CardAbility(Player player, Player Rival)
     {
-        
+        WheelManager.Instance.LoanChance(player);
     }
 }
