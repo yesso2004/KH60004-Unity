@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public enum Role
@@ -26,6 +24,7 @@ public class Player:MonoBehaviour
         {
             Card DrawnCard = GameManager.instance.DeckDraw();
             Hand.Add(DrawnCard);
+            UIManager.Instance.DsiplayCard(DrawnCard, this);
         }
     }
 
@@ -36,9 +35,11 @@ public class Player:MonoBehaviour
             if (Hand.Count >= 5)
             {
                 // DiscardCard();
+                return;
             }
             Card DrawnCard = GameManager.instance.DeckDraw();
             Hand.Add(DrawnCard);
+            UIManager.Instance.DsiplayCard(DrawnCard, this);
         }
     }
 
@@ -56,3 +57,5 @@ public class Player:MonoBehaviour
         
     }
 }
+
+

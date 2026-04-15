@@ -1,4 +1,4 @@
-using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -8,10 +8,11 @@ public class Frame : Card
 {
 
 
-    List<Card> PenaltyCards = new List<Card> { Felony,};
-    Card Penalty 
+    [SerializeField] private List<Card> PenaltyCards = new List<Card>();
+    
     public override void CardAbility(Player player, Player Rival)
     {
-        
+        int RandomIndex = Random.Range(0,PenaltyCards.Count);
+        Card PenaltyCard = PenaltyCards[RandomIndex];
     }
 }

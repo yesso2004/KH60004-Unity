@@ -1,4 +1,4 @@
-using System.Collections;using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         Shuffle();
+        Game();
     }
 
     public void Game()
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
                 
                 foreach (Player player in Players)
                 {
-                    
+                    player.InitialDraw();
                 }
             }
             foreach (Player player in Players)
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
         if (Deck.Count <= 0)
         {
             Debug.Log("Game Over");
+            return null;
         }
         
         int RandomCardIndex = Random.Range(0, Deck.Count);

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb0ff1e086a56048b1906947638e7bd, type: 3}
+  m_Name: Entrepreneur
+  m_EditorClassIdentifier: Assembly-CSharp::Entrepreneur
+  CardName: Entrepreneur
+  CardDescription: Upon using the paycheck card, the player receives a 500 SP salary.
+  CardType: 0
+  CardSprite: {fileID: 3713452543112603906, guid: d2b6f1e911431914d993e2522a66b116, type: 3}
+  CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}
