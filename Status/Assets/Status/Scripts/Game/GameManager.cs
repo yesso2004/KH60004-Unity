@@ -1,5 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,40 +12,65 @@ public class GameManager : MonoBehaviour
     public Player AI;
     public List<Player> Players;
     public List<Card> Deck = new List<Card>();
-    public int RoundNumber = 0;
+    public int RoundNumber = 1;
     
     
     void Awake()
     {
         instance = this;
         Shuffle();
-        Game();
     }
 
-    public void Game()
+    private void Start()
     {
-        for (int i = 0; i < 20; i++)
-        {
-            if (i == 0)
-            {
-                
-                foreach (Player player in Players)
-                {
-                    player.InitialDraw();
-                }
-            }
-            foreach (Player player in Players)
-            {
-            }
-        }
-       
+       Me.InitialDraw();
+       AI.InitialDraw();
     }
-    
+
+    public void AITurn(Player player)
+    {
+        StartCoroutine(AITurnWait(player));
+    }
+
+    public IEnumerator AITurnWait(Player player)
+    {
+        
+        if (RoundNumber > 1)
+        {
+             AI.DrawCard();
+           
+        }
+     
+
+        yield return new WaitForSeconds(5f);
+
+        if (AI.Hand.Count == 0)
+        {
+            RoundNumber++;
+            AI.Playing = false;
+            Me.DrawCard();
+            yield break;
+        }
+
+        if (AI.Hand.Count > 0)
+        {
+            int RandomPlay = Random.Range(0, AI.Hand.Count);
+            Card RandomChoice = AI.Hand[RandomPlay];
+            AI.PlayCard(RandomChoice, player);
+        }
+
+        RoundNumber++;
+
+        AI.Playing = false;
+        Me.DrawCard();
+    }
+
     public Card DeckDraw()
     {
         if (Deck.Count <= 0)
         {
             Debug.Log("Game Over");
+            SceneManager.LoadScene("Menu");
             return null;
         }
         

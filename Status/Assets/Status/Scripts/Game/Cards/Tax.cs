@@ -5,6 +5,7 @@ public class Tax : Card
 {
     public override void CardAbility(Player player, Player Rival)
     {
-        player.StatusPoints *= Mathf.RoundToInt(0.15f);
+        int TaxAmount = Mathf.RoundToInt(player.StatusPoints * 0.15f);
+        player.StatusPoints -= TaxAmount;
     }
 }

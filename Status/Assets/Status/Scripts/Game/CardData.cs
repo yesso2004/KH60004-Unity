@@ -1,18 +1,19 @@
-using System;
-using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CardData : MonoBehaviour
+public class CardData : MonoBehaviour , IPointerClickHandler
 {
     public Card Data;
     private Image CardIMG;
+    private bool Hidden = false;
+    private bool Played = false;
 
     void Awake()
     {
         CardIMG = GetComponent<Image>();
     }
-    public void DisplayCards(Card CD, bool Hidden)
+    public void DisplayCards(Card CD, bool HiddenCard)
     {
         Data = CD;
 
@@ -21,7 +22,7 @@ public class CardData : MonoBehaviour
             return;
         }
 
-        if (Hidden)
+        if (HiddenCard)
         {
             CardIMG.sprite = Data.CardHiddenSprite;
         }
@@ -31,5 +32,17 @@ public class CardData : MonoBehaviour
         }
 
     }
-   
+ 
+
+    public void OnPointerClick(PointerEventData EventData)
+    {
+        if (Hidden || Played)
+        {
+            return;
+        }
+
+        Played = true;
+
+        GameManager.instance.Me.PlayCard(Data, GameManager.instance.AI);
+    }
 }

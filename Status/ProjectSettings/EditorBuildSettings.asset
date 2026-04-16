@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Status/Scenes/Menu.unity
     guid: 8f3def2a13267be4d8afbea1961e5ec2
+  - enabled: 1
+    path: Assets/Status/Scenes/StatusGame.unity
+    guid: b210be5296a363e4b92b06f248df91cf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

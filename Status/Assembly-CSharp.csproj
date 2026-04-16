@@ -68,11 +68,11 @@
     <Compile Include="Assets\Status\Scripts\Game\Cards\Informant.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Status\Scripts\Game\GameManager.cs" />
-    <Compile Include="Assets\Status\Scripts\Game\Cards\Blackmail.cs" />
     <Compile Include="Assets\FireBase\FirebaseApp\Internal\HttpHelpers.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Loyalty.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Status\Scripts\Menus\PlayGame.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Traitor.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -98,6 +98,7 @@
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Paycheck.cs" />
+    <Compile Include="Assets\Status\Scripts\Menus\UserData.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />

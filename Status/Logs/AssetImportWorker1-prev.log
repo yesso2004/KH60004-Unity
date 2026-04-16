@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-14T23:36:42.8320315Z"
 Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-14T13:37:54.8475719Z"
 OS: 'Windows 11  (10.0.26100) Professional' Language: 'en' Physical Memory: 16091 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-14T13:37:54Z
+Date: 2026-04-14T23:36:42Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/medoo/OneDrive/Desktop/Status
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-12918
+49920
 -licensingIpc
 LicenseClient-medoo
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/medoo/OneDrive/Desktop/Status
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [5480]  Target information:
+Player connection [26012]  Target information:
 
-Player connection [5480]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 2032572020 [EditorId] 2032572020 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [26012]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 2412635232 [EditorId] 2412635232 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5480] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [5480] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26012] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26012] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -93,17 +93,17 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-medoo"
 [Licensing::IpcConnector] LicenseClient-medoo channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-14T13:37:55.7332898Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-14T23:36:43.9234388Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              534ebf6989ca476cb438f44d18bcbca7
-  Correlation Id:          ee24d858b0a0c12382b0da4509f3e11c
-  External correlation Id: 6608514073661550531
+  Session Id:              3a31a7806d154914b849797d7b2d1d46
+  Correlation Id:          e9d9d92b04277ad33cb0186f10bce708
+  External correlation Id: 2446521991368102268
   Machine Id:              agf7rBPk51ccx3CzQra/GLhDOyE=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.97s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-14T13:37:56.7163083Z"
-[Licensing::Module] Licensing Background thread has ended after 1.87s
-[Licensing::Module] Licensing is initialized (took 1.43s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 1.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-14T23:36:45.0661214Z"
+[Licensing::Module] Licensing Background thread has ended after 2.23s
+[Licensing::Module] Licensing is initialized (took 1.84s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 11270634123586-UnityPersXXXX
@@ -112,7 +112,7 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
   Expiration: Unlimited
 Got setting from build profile YAML, name `m_BuildTarget`, value `13`
 Got setting from build profile YAML, name `m_Subtarget`, value `0`
-Refreshing native plugins compatible for Editor in 67.17 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 44.94 ms, found 7 plugins.
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/medoo/OneDrive/Desktop/Status/Assets
@@ -133,7 +133,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 CodeReloadManager initialized
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
@@ -143,14 +143,14 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003786 seconds.
+Registered in 0.006890 seconds.
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 238 ms
+Android Extension - Scanning For ADB Devices 196 ms
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -158,23 +158,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.648 seconds
-Domain Reload Profiling: 1059ms
-	BeginReloadAssembly (120ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (182ms)
-		LoadAssemblies (118ms)
-		AnalyzeDomain (174ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (160ms)
-	FinalizeReload (649ms)
+- Finished resetting the current domain, in  0.625 seconds
+Domain Reload Profiling: 1243ms
+	BeginReloadAssembly (298ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (219ms)
+		LoadAssemblies (297ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (156ms)
+	FinalizeReload (625ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (325ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (91ms)
-			ProcessInitializeOnLoadMethodAttributes (85ms)
+			InitializePlatformSupportModulesInManaged (326ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 ========================================================================
@@ -232,7 +232,7 @@ Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 12.41 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 31.77 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -244,137 +244,1199 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.398 seconds
-Domain Reload Profiling: 2646ms
-	BeginReloadAssembly (245ms)
-		DisableScriptedObjects (47ms)
-		CreateAndSetChildDomain (29ms)
+- Finished resetting the current domain, in  1.313 seconds
+Domain Reload Profiling: 2722ms
+	BeginReloadAssembly (185ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (138ms)
-	LoadAllAssembliesAndSetupDomain (826ms)
-		LoadAssemblies (611ms)
-		AnalyzeDomain (314ms)
-			TypeCache.Refresh (208ms)
-				TypeCache.ScanAssembly (188ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (1090ms)
+		LoadAssemblies (855ms)
+		AnalyzeDomain (305ms)
+			TypeCache.Refresh (201ms)
+				TypeCache.ScanAssembly (183ms)
 			BuildScriptInfoCaches (93ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1398ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1314ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (633ms)
-			ProcessInitializeOnLoadMethodAttributes (321ms)
-			AfterProcessingInitializeOnLoad (5ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (205ms)
+			ProcessInitializeOnLoadAttributes (603ms)
+			ProcessInitializeOnLoadMethodAttributes (258ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.72 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 4.59 ms, found 7 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8890 unused Assets / (5.9 MB). Loaded Objects now: 9667.
-Memory consumption went from 185.2 MB to 179.2 MB.
-Total: 10.220400 ms (FindLiveObjects: 1.549500 ms CreateObjectMapping: 0.659600 ms MarkObjects: 5.453800 ms  DeleteObjects: 2.554100 ms)
+Unloading 8892 unused Assets / (5.6 MB). Loaded Objects now: 9670.
+Memory consumption went from 181.5 MB to 175.9 MB.
+Total: 9.590800 ms (FindLiveObjects: 1.475800 ms CreateObjectMapping: 0.397200 ms MarkObjects: 5.593800 ms  DeleteObjects: 2.117800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4424881.906096 seconds.
-  path: Assets/Status/Scripts/Game/WheelManager.cs
-  importAddress: Guid(c2e1cc0167b0e3d4a8fe8d6efa1baea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Scripts/Game/WheelManager.cs using Guid(c2e1cc0167b0e3d4a8fe8d6efa1baea4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '754a2391c427830e4cb39c794be8059d') in 0.0793102 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=797d5f1abd1cd920e9bd6128d381f6bd DependenciesID=7ab2b84588fc118bf6bd87ab5f94821e StaticDependenciesID=8b6287946c4f9c9aad58330ebe43b41a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Status/Cards/Government Category/Tax.asset
-  importAddress: Guid(3f8d026510a3ff842b6ab891f5986c68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Government Category/Tax.asset using Guid(3f8d026510a3ff842b6ab891f5986c68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0577b889f5a93112ffda11ed00c0e9e3') in 0.0678802 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c00f75c37794ea8ecf1a48fd4126671 DependenciesID=afc9fcac1e864cc2c5aae5aac63acb7f StaticDependenciesID=e0befacdd76fd7a08783ee28864fe4e8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 19560.837943 seconds.
   path: Assets/Status/Scenes/StatusGame.unity
   importAddress: Guid(b210be5296a363e4b92b06f248df91cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Scenes/StatusGame.unity using Guid(b210be5296a363e4b92b06f248df91cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '37cafa5851725eb50b3cd0022bdd80a1') in 0.0221922 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07d599688d0a2b49e715fad9b319cd14 DependenciesID=3115ffdddb76419bedee8d51ba17fd6e StaticDependenciesID=bd5239ef0b519962c1bc9d1fcb0e6401 
+Start importing Assets/Status/Scenes/StatusGame.unity using Guid(b210be5296a363e4b92b06f248df91cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dd9d494795c56a6f234ed6c270fc5c6c') in 0.072875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eaa5eae48aabef9a44edcf2d6525da87 DependenciesID=297ba0eaa447a9062711e6645e744055 StaticDependenciesID=7ffa41f565613ebd71df36e3c28ee922 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Status/Cards/Career Category/Paycheck.asset
-  importAddress: Guid(8ed8cb95ea424f540a8669d101cedb3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Career Category/Paycheck.asset using Guid(8ed8cb95ea424f540a8669d101cedb3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '75f07a6bbda82043e8d06f7d52e74419') in 0.035215 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f36277cbf6ae4c116bf32b2a7ab104b3 DependenciesID=c366e4d2f999f88bb016510d8d1bb322 StaticDependenciesID=32773b14a2e4dd9b910cb1bcfd81bde3 
+  Time since last request: 0.000022 seconds.
+  path: Assets/Status/Scripts/Game/Cards/Card.cs
+  importAddress: Guid(499c105c7e3ff4742acc4b54f1404e2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Status/Scripts/Game/Cards/Card.cs using Guid(499c105c7e3ff4742acc4b54f1404e2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ea09432b59f63c744f795f3a13f6f90c') in 0.0273658 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a2871e7eab1621160dd19d8a1c6cf98 DependenciesID=d198af809c3525fc89b523c516594551 StaticDependenciesID=efa0db57f1cf01da1828fe313c385227 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 5.25 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.279 seconds
+Domain Reload Profiling: 2176ms
+	BeginReloadAssembly (204ms)
+		DisableScriptedObjects (21ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (581ms)
+		LoadAssemblies (444ms)
+		AnalyzeDomain (211ms)
+			TypeCache.Refresh (9ms)
+			BuildScriptInfoCaches (191ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1279ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (236ms)
+			ProcessInitializeOnLoadAttributes (636ms)
+			ProcessInitializeOnLoadMethodAttributes (183ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 6.80 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (5.7 MB). Loaded Objects now: 9677.
+Memory consumption went from 183.3 MB to 177.7 MB.
+Total: 8.511400 ms (FindLiveObjects: 0.822700 ms CreateObjectMapping: 0.370500 ms MarkObjects: 4.987900 ms  DeleteObjects: 2.329000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 4.38 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.246 seconds
+Domain Reload Profiling: 2203ms
+	BeginReloadAssembly (204ms)
+		DisableScriptedObjects (23ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (637ms)
+		LoadAssemblies (489ms)
+		AnalyzeDomain (220ms)
+			TypeCache.Refresh (8ms)
+			BuildScriptInfoCaches (199ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1246ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (214ms)
+			ProcessInitializeOnLoadAttributes (633ms)
+			ProcessInitializeOnLoadMethodAttributes (187ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 5.75 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (5.6 MB). Loaded Objects now: 9681.
+Memory consumption went from 186.0 MB to 180.3 MB.
+Total: 9.022500 ms (FindLiveObjects: 0.956500 ms CreateObjectMapping: 0.426200 ms MarkObjects: 5.102200 ms  DeleteObjects: 2.535700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 4.91 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.214 seconds
+Domain Reload Profiling: 2075ms
+	BeginReloadAssembly (200ms)
+		DisableScriptedObjects (24ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (556ms)
+		LoadAssemblies (403ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (9ms)
+			BuildScriptInfoCaches (198ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1215ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			BeforeProcessingInitializeOnLoad (218ms)
+			ProcessInitializeOnLoadAttributes (621ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 5.79 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (5.7 MB). Loaded Objects now: 9685.
+Memory consumption went from 186.7 MB to 180.9 MB.
+Total: 8.227900 ms (FindLiveObjects: 0.628500 ms CreateObjectMapping: 0.435100 ms MarkObjects: 4.960200 ms  DeleteObjects: 2.202000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 7.82 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.381 seconds
+Domain Reload Profiling: 2440ms
+	BeginReloadAssembly (307ms)
+		DisableScriptedObjects (67ms)
+		CreateAndSetChildDomain (81ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (636ms)
+		LoadAssemblies (486ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (8ms)
+			BuildScriptInfoCaches (213ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1382ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (257ms)
+			ProcessInitializeOnLoadAttributes (660ms)
+			ProcessInitializeOnLoadMethodAttributes (208ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 6.70 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (5.7 MB). Loaded Objects now: 9689.
+Memory consumption went from 187.4 MB to 181.7 MB.
+Total: 13.160900 ms (FindLiveObjects: 1.733800 ms CreateObjectMapping: 0.610500 ms MarkObjects: 6.054400 ms  DeleteObjects: 4.760100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.32 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8796 unused Assets / (5.4 MB). Loaded Objects now: 9689.
+Memory consumption went from 181.4 MB to 175.9 MB.
+Total: 17.287900 ms (FindLiveObjects: 0.921600 ms CreateObjectMapping: 0.403900 ms MarkObjects: 13.611800 ms  DeleteObjects: 2.348600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 7.30 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.213 seconds
+Domain Reload Profiling: 2607ms
+	BeginReloadAssembly (329ms)
+		DisableScriptedObjects (44ms)
+		CreateAndSetChildDomain (103ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (928ms)
+		LoadAssemblies (744ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (35ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (231ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1213ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (240ms)
+			ProcessInitializeOnLoadAttributes (579ms)
+			ProcessInitializeOnLoadMethodAttributes (157ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 4.49 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (4.9 MB). Loaded Objects now: 9693.
+Memory consumption went from 188.7 MB to 183.9 MB.
+Total: 8.550100 ms (FindLiveObjects: 1.771700 ms CreateObjectMapping: 0.367900 ms MarkObjects: 4.570700 ms  DeleteObjects: 1.838400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass-testable.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass-testable.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.EditorTests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.PlayerAccounts.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Authentication.Server.Tests.dll at Library/ScriptAssemblies/Unity.Services.Authentication.Server.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Services.Multiplayer.Server.dll at Library/ScriptAssemblies/Unity.Services.Multiplayer.Server.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Symbol file LoadedFromMemory is not a mono symbol file
+Refreshing native plugins compatible for Editor in 4.81 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.210 seconds
+Domain Reload Profiling: 2145ms
+	BeginReloadAssembly (221ms)
+		DisableScriptedObjects (28ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (600ms)
+		LoadAssemblies (460ms)
+		AnalyzeDomain (226ms)
+			TypeCache.Refresh (7ms)
+			BuildScriptInfoCaches (207ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1210ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (221ms)
+			ProcessInitializeOnLoadAttributes (587ms)
+			ProcessInitializeOnLoadMethodAttributes (189ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 6.15 ms, found 7 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8889 unused Assets / (5.1 MB). Loaded Objects now: 9697.
+Memory consumption went from 189.5 MB to 184.4 MB.
+Total: 10.928000 ms (FindLiveObjects: 1.574200 ms CreateObjectMapping: 0.788300 ms MarkObjects: 6.042200 ms  DeleteObjects: 2.520600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2099200 -> 2361344
+========================================================================
+Received Import Request.
+  Time since last request: 916.191439 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/2button_blue_middle.png
+  importAddress: Guid(2b6e58e066a469c499d930cd4a4ceade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/2button_blue_middle.png using Guid(2b6e58e066a469c499d930cd4a4ceade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd8e60dcdc859768048c73b82592e46cf') in 0.3410168 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a094051c1c74f77e28400a50169985e1 DependenciesID=896b34867a4a7108fed139351cabb9c8 StaticDependenciesID=5744775896de69b66b3f5968d812af02 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Status/Cards/Mob Category/Traitor.asset
-  importAddress: Guid(c0fd8474a65e2e1439639cf3cee1d44b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Mob Category/Traitor.asset using Guid(c0fd8474a65e2e1439639cf3cee1d44b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c13a9f4d92b9fdd7a32bdd09f604ccc0') in 0.0286356 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3bc0612772b80753765510a3e29a53c0 DependenciesID=4fbd12adf0b1bf42cb7f28c907a0a49a StaticDependenciesID=1c4a9c12e9066a482755bc70e8dbee17 
+  Time since last request: 0.000087 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/4button_green_middle.png
+  importAddress: Guid(fafb57e9cc0c62245a6bd4d42a895309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/4button_green_middle.png using Guid(fafb57e9cc0c62245a6bd4d42a895309) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f05b5f88e9c41d62f8436afbf2bdf69f') in 0.0475076 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6c5a64d7dd32e903d7447ccb9089f4be DependenciesID=050890cbc93c26bfa26b2c2de3916e07 StaticDependenciesID=2696c943289a8f9add2884cf15e52d6f 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Status/Cards/Government Category/Felony.asset
-  importAddress: Guid(94c6ff379b002c044833be868918b6a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Government Category/Felony.asset using Guid(94c6ff379b002c044833be868918b6a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b0756bb64c9bde422a221179523865d9') in 0.0359686 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=636281729ec15ea603c0c24eb796bde4 DependenciesID=91cd2a87676017c34abb9b58edd17fdc StaticDependenciesID=55ae07be431b2185025cf0eae41711b0 
+  Time since last request: 0.000048 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/19bttn-midl.png
+  importAddress: Guid(aa3bf53c498deb44b80ad60af801942c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/19bttn-midl.png using Guid(aa3bf53c498deb44b80ad60af801942c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '681a91c89c05c5e1f33fe3d157a53f05') in 0.0363682 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4dcc8b26a28aa1a1bb3d2d833d0c4c55 DependenciesID=5c3653bf2ebc0b08488c678f09d0bf07 StaticDependenciesID=2314557bf335c0b5a61e2ab7a407bf9f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/6button_green_middle.png
+  importAddress: Guid(a16c91ca6a9a60b4596b57635c8a3e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/6button_green_middle.png using Guid(a16c91ca6a9a60b4596b57635c8a3e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0345f30c567a55a2f8e7d6f2871d30cf') in 0.0447266 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a8f194435c22dc8013a6bcd34646d4d9 DependenciesID=dd241f79ba9e17ec70f9e238afc4fcde StaticDependenciesID=fea258ef0e21141e978179c2240af877 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/Status/Cards/Mob Category/Theft.asset
-  importAddress: Guid(a15a39a6bf6a6e944a30e2155f230e6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Mob Category/Theft.asset using Guid(a15a39a6bf6a6e944a30e2155f230e6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b8b735570e662984107df5f3160c9151') in 0.0387333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9628e3e8c4e2106d7473b03ac58b7b7a DependenciesID=c1b323dc358b3880fd6e2f33c1f91cb5 StaticDependenciesID=6891aa3c28c66fe9a9dc28fae2331639 
+  path: Assets/Status/Imports/Buttons/PNG/13Button_Long_Green.png
+  importAddress: Guid(0d80a796f0489b846a1e62dff146281c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/13Button_Long_Green.png using Guid(0d80a796f0489b846a1e62dff146281c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c8d27aae4f1c5a7b2f45edaeb74ceaff') in 0.0343231 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5bd04185f07cc79ffb35d4b88e18698b DependenciesID=6cd332079a752862c6d59c374ea89420 StaticDependenciesID=a96c39840cbe449d23ce324d789e181c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/26Button_Long_Blue.png
+  importAddress: Guid(b9f146537c9d53e449ad8f389525ffe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/26Button_Long_Blue.png using Guid(b9f146537c9d53e449ad8f389525ffe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '447207c14b42f26bfd58ced36be83ec9') in 0.0306597 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c445c1a1ef2cbbf60c558140aea72ad7 DependenciesID=cf20ed3209c1d3ae74311fa56b40cc05 StaticDependenciesID=165b85f8aecdb727a110d0ef98275340 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Status/Cards/Career Category/Employed.asset
-  importAddress: Guid(4b5b6db66d358de4890f579df0c967a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Career Category/Employed.asset using Guid(4b5b6db66d358de4890f579df0c967a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e92cbc723f582d0d1dad82283b509b3a') in 0.0310827 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ab89526ad63ce3039ac460e4065d765 DependenciesID=046027c7c96c706433ad9af494a299a1 StaticDependenciesID=74cca17d008e1e95b4956b25a311c6a9 
+  path: Assets/Status/Imports/Buttons/PNG/9Button_Midl_Green.png
+  importAddress: Guid(70ce67e982fddb74289530c17f57aac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/9Button_Midl_Green.png using Guid(70ce67e982fddb74289530c17f57aac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '87ff76697354c0036bbf2452134ee05e') in 0.0369416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1fd21f34e333b3c998401e28e75d72d9 DependenciesID=1ce19840c9c62b38be284aebeb22e09d StaticDependenciesID=3cb43273c9c7a577e156496d17b9293c 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Status/Cards/Career Category/Entrepreneur.asset
-  importAddress: Guid(5b059916b73e1d74392d75082285c245) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Career Category/Entrepreneur.asset using Guid(5b059916b73e1d74392d75082285c245) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3fb90e727031d692ac03549c801f5e0e') in 0.035159 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=70f3dffcb48b6743c35d2c78184ca438 DependenciesID=b3f03578818ff4b456fb653896c8d91f StaticDependenciesID=e7c25d98f941c88c2195b0af658f3d7a 
+  Time since last request: 0.000022 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/11Button_Midl_Blue.png
+  importAddress: Guid(779b95c4bc6a9534299af022ce6c4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/11Button_Midl_Blue.png using Guid(779b95c4bc6a9534299af022ce6c4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7042c946d9ab9aaa80d4c7dc3f02a034') in 0.0310926 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b456afae59a4a2cc08bf390ad75365d3 DependenciesID=74ed0b134f1bbdb1378bbfe3c84e77d5 StaticDependenciesID=aa3d381bc8b02a24d8781ca9d680639b 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/Status/Cards/Bank Category/Offense.asset
-  importAddress: Guid(4f612b40a62a9e845b067549f0a1ceb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Bank Category/Offense.asset using Guid(4f612b40a62a9e845b067549f0a1ceb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '75da1408881622b436e6e5c082517f88') in 0.037464 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=72969c91a2ee2e8835c5081ccdc51fb5 DependenciesID=a4e0333c183afdb8e781c638dea34cb7 StaticDependenciesID=6686ec26a473787abbf1eb0bca7b5819 
+  path: Assets/Status/Imports/Buttons/PNG/21bttn-midl.png
+  importAddress: Guid(7786f021e2e01224596039df378dc25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/21bttn-midl.png using Guid(7786f021e2e01224596039df378dc25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7a49a91eb6930dd2566ed4f15bc88d0b') in 0.0305897 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aa1b5fd5091ca2f3f703497195f5d63e DependenciesID=52d191c72877636304a9f35d572b5934 StaticDependenciesID=458df6bb042e72fa0b96d4f9f9929f3a 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Status/Cards/Mob Category/Frame.asset
-  importAddress: Guid(60bd2d1f269e6fa4e937e9c30e1000bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Cards/Mob Category/Frame.asset using Guid(60bd2d1f269e6fa4e937e9c30e1000bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'be4db62e04b1a713c7aa9cea606156ee') in 0.0353048 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eb2d2855e19c19eaa15f3015334ddd9a DependenciesID=bd2a7e2f841e53a342ff00558345285e StaticDependenciesID=01951a3ae23716b1a3cee84390d1d3a4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+  Time since last request: 0.000029 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/20bttn-midl.png
+  importAddress: Guid(7e43ca8be54e1c54aa7cf14635191ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/20bttn-midl.png using Guid(7e43ca8be54e1c54aa7cf14635191ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '789e79fdc5e5f14b4568ba80f66d26f4') in 0.0309857 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64b39e34032dbb9b09b45b4c858f1b4d DependenciesID=4093b9f91b1371992bb8675445b60ff1 StaticDependenciesID=8d112004ff46e96849f177ad0ada036a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/12Button_Long_Blue.png
+  importAddress: Guid(4e75355f0aa718a498d932c89b2b994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/12Button_Long_Blue.png using Guid(4e75355f0aa718a498d932c89b2b994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '66faf52adcedd3b848135b4da477c58b') in 0.0401709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5dc356b12d482122cad6c015350b5f56 DependenciesID=4229a093fbd2bf35c482567e0c580df2 StaticDependenciesID=16efd7c52261be06a3fa16007055ce97 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/22Button_Midl_Green.png
+  importAddress: Guid(bf625ae84f769384fb0cd1cc52d14971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/22Button_Midl_Green.png using Guid(bf625ae84f769384fb0cd1cc52d14971) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '65595bfadaec273a69f1e97bda5e5307') in 0.0270574 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0149c03816a7493ce540f8a0387fc3c0 DependenciesID=a24e174137274f536d50fdc84016e20e StaticDependenciesID=5257c7204864b107b980f41422902293 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/25Button_Long_Green.png
+  importAddress: Guid(75b6e4700f21ab04198e8b1f956968a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/25Button_Long_Green.png using Guid(75b6e4700f21ab04198e8b1f956968a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6a710a892a376413e75c371ba13a7bdf') in 0.025745 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2db047b5c4810bdce0686a0ed610a1e DependenciesID=e125a78005cb36903105589ba41d4015 StaticDependenciesID=47ea10a8ec6c05b54ca2a2b632fc7013 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Status/Scripts/Game/Cards/Offense.cs
-  importAddress: Guid(da2312cbb19ac554cb22783de6a39ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Scripts/Game/Cards/Offense.cs using Guid(da2312cbb19ac554cb22783de6a39ec8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fe9f2818ee0f84239242398fbc7a3d7c') in 0.010782 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3261c93cbc31456b9909786352479739 DependenciesID=3b3765054a23db2a0e512cbc5844748d StaticDependenciesID=11a97439ad4a6921b22e1cd8de05ba21 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  path: Assets/Status/Imports/Buttons/PNG/10Button_Midl_Yellow.png
+  importAddress: Guid(d7b4d635d5ebc2a4c967aed03f5c932c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/10Button_Midl_Yellow.png using Guid(d7b4d635d5ebc2a4c967aed03f5c932c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f274362edcc922ea0b6690711f9dd307') in 0.0221569 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d8f1ac957ba52b90b87997cf1b95112 DependenciesID=0bc627625edfcaab445bb71cd660b36d StaticDependenciesID=a93cc38822e11e7063a98dcff94ea3ae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Status/Imports/Buttons/PNG/7button_green_middle.png
+  importAddress: Guid(b8ede16274078e4479b1a6b2d1e5ea06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Buttons/PNG/7button_green_middle.png using Guid(b8ede16274078e4479b1a6b2d1e5ea06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '217a8305edbd2dc3487b3e9d61183456') in 0.0272833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36fdb0b7384592eb9f4383660c259ea7 DependenciesID=2460d0c6c7aefee233434b4a5c266acb StaticDependenciesID=bb63838cc01e7b29f591d63ff2337f26 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.182708 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Buttons/Button Green.png
+  importAddress: Guid(c77a20011fee4694cb75577a7509ffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Buttons/Button Green.png using Guid(c77a20011fee4694cb75577a7509ffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd7b2170cef0de0653a7720d3ff1c9772') in 0.0428509 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f1518e529e081574b30d087309e8e5f5 DependenciesID=098108a0b1423df0fc3b392b61cdb382 StaticDependenciesID=b8f3a10f3d8ab0ce8625f04123784299 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Buttons/Button Pink.png
+  importAddress: Guid(6c083c68f537d944db0c5a63177e9627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Buttons/Button Pink.png using Guid(6c083c68f537d944db0c5a63177e9627) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '571e13777042fdf5a4e3b3d339edf2fd') in 0.0445538 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6e905f1f9ea1994d3e01557c65c44b17 DependenciesID=fba856be90f32654ce6cdca5fa4aac13 StaticDependenciesID=55131a29dc5355c8027378184de6cf3b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.725642 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Pink.png
+  importAddress: Guid(d8265e6a959e1064c97197868736a524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Pink.png using Guid(d8265e6a959e1064c97197868736a524) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '278abacf2a71d89f522dea398b06244b') in 0.0591526 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=371a6b508e3a37331c8894f18de5e387 DependenciesID=485e5328c3c79a3e10485bfb7c93b7e3 StaticDependenciesID=916aea4927538639a48d933b6a9ee1dd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Style 2 Pink.png
+  importAddress: Guid(2c39a557c7779ae42950c7dd2918d6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Style 2 Pink.png using Guid(2c39a557c7779ae42950c7dd2918d6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd20f216ce5fab18349b967bcc65b8542') in 0.1217558 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b1816ce842b6b818da1b93a43fd3f08 DependenciesID=d7166f13a3a4b0b051a6a362c78bd277 StaticDependenciesID=655798a4aee2226ab36d3c5cccebbb7d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Violet.png
+  importAddress: Guid(70b674ed6c1298644aee2e129a94c4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Violet.png using Guid(70b674ed6c1298644aee2e129a94c4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '63ebae792acc5bc905e480efaad9c227') in 0.1006769 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=952aba3bc65048b79b9152103e7bc4a2 DependenciesID=4704b9c3acf317c4d3b13b605bfd9167 StaticDependenciesID=13baac287f464884eb67671098ca83cc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.584859 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Prefab/Message.prefab
+  importAddress: Guid(b01002205b707a24c9bcc655f14264cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Prefab/Message.prefab using Guid(b01002205b707a24c9bcc655f14264cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '53868c04efd3631608c99cfa2e09df1a') in 0.2260347 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fc89907a35bdb908f83f80b18be47881 DependenciesID=351c1520ee5e1a2050f20a9dc1c727b1 StaticDependenciesID=4b78eb7741b2c91aa5e2cdc1888a23d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 223
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.761128 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Orange.png
+  importAddress: Guid(b0bf94ead829fd24591a1625a292a742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Orange.png using Guid(b0bf94ead829fd24591a1625a292a742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4b3c695c3a3a0d8dac5b1a6c2fdcde3c') in 0.0455933 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b4e0eb08b5d552f68bc763051cff43cf DependenciesID=353330aadb87de1a0bbc39f8d5e5925f StaticDependenciesID=43469315b5dccca53d52e91432045afb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Red.png
+  importAddress: Guid(1e8ffb2f21a909b46bb2883ddb8a7b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Red.png using Guid(1e8ffb2f21a909b46bb2883ddb8a7b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '464c338f519bb37bb0d1dc0c241723fa') in 0.061518 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed864701a1f8a65745084834e9370285 DependenciesID=b751611296d791c5b12541cba0915eaf StaticDependenciesID=8d5bd723145ac733698a56e16a6941cb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.209713 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Orange.png
+  importAddress: Guid(9cfba0c5f2e0a1348a792f8a72c9e429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Orange.png using Guid(9cfba0c5f2e0a1348a792f8a72c9e429) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e070e46b2155116bb82cc3f13b886494') in 0.0717864 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0274d644093d2495467d2622849df910 DependenciesID=e27919511cf24c7cf52563d50496df61 StaticDependenciesID=f6d6057e931badd4e67ec67fe2d6fd5e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Red.png
+  importAddress: Guid(57bb1f0c009ff8a41a3bb184e99fd58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Red.png using Guid(57bb1f0c009ff8a41a3bb184e99fd58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '71d2ac9097d30c481700ac9138de263f') in 0.0511648 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca6dc11e67fca354087de8c4cdcf801a DependenciesID=9e1412c08ad8bd17f1816cc3d19775c9 StaticDependenciesID=203eab5d6972d3bcdc59f75123f9c9e9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.235835 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Orange.png
+  importAddress: Guid(b13761cdab549c14f86ee1256f9a8d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Orange.png using Guid(b13761cdab549c14f86ee1256f9a8d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '746f585c61a628256b5c2220c5e5bf4c') in 0.0374451 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0936ca5697244599a9c54b46180fd6d1 DependenciesID=0fccb35956a1abeac50aaca4c96cfedc StaticDependenciesID=9aababa5c744ea429fbd60086341e254 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Violet.png
+  importAddress: Guid(e7da5cbaae50b3742a2c64373d61cfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Violet.png using Guid(e7da5cbaae50b3742a2c64373d61cfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '48c9846bc5c9ed181d1b32990544d055') in 0.0741943 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=475eca3b2f683f2a99ef43bc47068d78 DependenciesID=87b5922a3909742dea84514ea1e41d43 StaticDependenciesID=14f357496da59df1a74b3a832b37b75d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.615288 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Back2.png
+  importAddress: Guid(2035e66b93963cb4498ad33adec4063b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Back2.png using Guid(2035e66b93963cb4498ad33adec4063b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9e2e2e7b43a59d8359cbf0686ce25c7d') in 0.0521903 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b07e95bae6aba44edfc97e84344e195 DependenciesID=e96a20cb010e69c5feb2361850307a9e StaticDependenciesID=17e3a031b89880ef8026f3b77edee7f5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteMusic3.png
+  importAddress: Guid(1562b516883b5ac44b22d7e453e8112b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteMusic3.png using Guid(1562b516883b5ac44b22d7e453e8112b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f67cba65dcfd1171639c7412be09e3cf') in 0.0489318 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c703a41f8e39f9f24b0fc917a773e62b DependenciesID=ba91dde53b76aa758816fc7fac1b25f4 StaticDependenciesID=7f5b647ace1bf1e4e47b33b56997b915 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock4.png
+  importAddress: Guid(58637b01d524d754daf0cd69159ca3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock4.png using Guid(58637b01d524d754daf0cd69159ca3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '461fa54bd4744d204139152547cf5432') in 0.0558943 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d1f8fa3981c8c7ebc22d3bf904696ddd DependenciesID=ea299f67117607955a73e36ba0b3fe7e StaticDependenciesID=45b5becc51b567811dd74a06ff599174 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond2.png
+  importAddress: Guid(b023e794e1bd17b47bcf04b6405586d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond2.png using Guid(b023e794e1bd17b47bcf04b6405586d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd00d3dc69942a5736994801c4fb3c78a') in 0.043953 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c28b75979bf1e10a45cf1fcd6d9c0587 DependenciesID=0a515910b57c2d58492ff79b3e88e9b4 StaticDependenciesID=ecd90dc833679e6eb6cf37179fd0435a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit2.png
+  importAddress: Guid(920e6a989bdd0184db618901b33ef334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit2.png using Guid(920e6a989bdd0184db618901b33ef334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0327bbf0bdee02941fbf0172fbcaefcc') in 0.038892 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9cf0aefac95c49da414879a8fa2a83fc DependenciesID=bdbe19007e500920cd7d9963eb21faf2 StaticDependenciesID=297ec62dae9168994a496b2e73bb6c85 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle3.png
+  importAddress: Guid(c1eeb75fc73b00f46aa9f03d8a7c5898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle3.png using Guid(c1eeb75fc73b00f46aa9f03d8a7c5898) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '27fc9879e217953c281fba065cc58a5d') in 0.0277523 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=589d26e18f7b38e9199f05c35378d89c DependenciesID=05c6b5aad3c997371cb749e309a2182f StaticDependenciesID=e9c320f77955b84d4a34413e6043834c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button5.png
+  importAddress: Guid(4c530c6c6cd94824397df81ce9724dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button5.png using Guid(4c530c6c6cd94824397df81ce9724dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5c3d300fe9df8514058d943fed31b294') in 0.0409309 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7a17fbe6301bf07497ea1f17f817c054 DependenciesID=7f3f61d43a896edbebb37e97479b576b StaticDependenciesID=4e5afa619865f6ae55c5694c9710ff0e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation5.png
+  importAddress: Guid(f67623370192f6a4293f4fde09358269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation5.png using Guid(f67623370192f6a4293f4fde09358269) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2d7e0f05b595fec22a977b9e5e0118ba') in 0.030399 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f7067fb1d974ea60de8112d80d0d818 DependenciesID=c001b97e413fd01cc944be2bf61bb1e6 StaticDependenciesID=bb8716859788a59ac70ecc628caa3bb2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock3.png
+  importAddress: Guid(6e53b526b14812f45b79500c2afcf3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock3.png using Guid(6e53b526b14812f45b79500c2afcf3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'baeff3556b18a64bbf93bd3152e86900') in 0.0319935 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdd140ce0642240193f92510de279189 DependenciesID=b9092dfece35c6d66dc9a274418c0b52 StaticDependenciesID=e1c135d95f8f417f95aa2f9822b70766 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle4.png
+  importAddress: Guid(0beb911912262a94792460c20097f3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle4.png using Guid(0beb911912262a94792460c20097f3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ce3643560883e1ec67db8ac35bb16056') in 0.0272352 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7e210ebeb814c37fdb6ffd3ff3a7fc80 DependenciesID=12c046389488978bac3c14870ae78fba StaticDependenciesID=818eb2acbaf43abc9c6e9fc7e9f52875 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic3.png
+  importAddress: Guid(2dc3aca2b10a19143b77217399d486f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic3.png using Guid(2dc3aca2b10a19143b77217399d486f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4d24fb792922b2e536c4367a327fd157') in 0.0234815 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8408f4c0a772e371fd1addc3ed23e95e DependenciesID=df8793ea4bdd638ea25ebbfd453eb8f7 StaticDependenciesID=975117a31ac6883bfc0cd60e2eb40ad5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit5.png
+  importAddress: Guid(231fb3495b8048142808704628f0879f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit5.png using Guid(231fb3495b8048142808704628f0879f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e0a3d5da36b1cf8a2480de0f97720f4c') in 0.0286172 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64ca82516afd62e102386d4628f7db27 DependenciesID=8f6cc3b5be11ec82be1e89f412de8705 StaticDependenciesID=28a91c44c96cefa8b641fe95bb076a73 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic1.png
+  importAddress: Guid(ebe290dfc865a45458debf0ad9f4730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic1.png using Guid(ebe290dfc865a45458debf0ad9f4730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ff66b3866ac9fdef929dc7e1982499bb') in 0.0305097 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d4b027ee50072ede873d1f0bcfd63b1 DependenciesID=2b4e03df6abc7c86cc9b63d547fff38f StaticDependenciesID=f2ee0b445f05ce80635db1ac5cbe18fd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteMusic5.png
+  importAddress: Guid(a2d638fa7cfc02c4797ada2e19e0190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteMusic5.png using Guid(a2d638fa7cfc02c4797ada2e19e0190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd039bfcff3b8fde98baa6f7348784543') in 0.0288201 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3452d43974e2f93160d9d3dedf86b0d2 DependenciesID=7bacd29c263b01b777aa8c0694e18939 StaticDependenciesID=3b530174a5f0172b1436f0cba62b2988 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lightning1.png
+  importAddress: Guid(9d73c316091aa384586ce329c1e8301a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lightning1.png using Guid(9d73c316091aa384586ce329c1e8301a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd139a6e6f3421b3426e17ec872c8f262') in 0.053688 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f55b0eeb1f35f64e6fd68f81c2ed7360 DependenciesID=8791da9a4132f48e242c450ec0b904c2 StaticDependenciesID=cf1f96304e5aa0ca7ab08ef8ccdc5940 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock4.png
+  importAddress: Guid(33cc6e9fe3a020b4ea77a9ab86d7c1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock4.png using Guid(33cc6e9fe3a020b4ea77a9ab86d7c1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0c23ac14aa7f44d5831626d6d8653aaa') in 0.0313398 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fbe9b3c78ddcf14906927694ebd1d199 DependenciesID=65d3d61ef46f70811ded4d6b79c59a59 StaticDependenciesID=4b79d1ae854b9aaf4f073e921653ff31 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock5.png
+  importAddress: Guid(afdd08b28769942408ec7718cb42dd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock5.png using Guid(afdd08b28769942408ec7718cb42dd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6b93805364ad7caf6ae8df6f4d3f2552') in 0.0306082 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e9f67e883390c3116c062cc6ff9c179 DependenciesID=bd3d6d3f04e0603336e7948e4d5c0bcd StaticDependenciesID=5c552634ba7a40f4465d5973200649aa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation2.png
+  importAddress: Guid(1d5849296b8a2ad4eb24f353832a9636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation2.png using Guid(1d5849296b8a2ad4eb24f353832a9636) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8285b9ce7429cbf106c0c0301b6cab4f') in 0.0249224 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aa94a9e3e73f4754d6075397d001e537 DependenciesID=9aa7ad51814498384cb06d64e0dd9c77 StaticDependenciesID=bd640648ad2e530c94cdee5e0c0ec88f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell2.png
+  importAddress: Guid(5e019c8ac1ab861438dbe573fd168bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell2.png using Guid(5e019c8ac1ab861438dbe573fd168bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '14a6d5aae02e6d22d9517c863c281ffb') in 0.0374519 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8ddd53d4cccf2a26b875f233d02fb578 DependenciesID=87fa34ebad607f69aba4609d4bd83858 StaticDependenciesID=da6ce46cbfef462628dbf92a5ce0740d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock2.png
+  importAddress: Guid(21870ab7b8097874cbf3e2e57fdf6794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock2.png using Guid(21870ab7b8097874cbf3e2e57fdf6794) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fb6ad0dd58f6213e522adeb13fb884d5') in 0.031592 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dade16f5c04477e8940f3bf7f46e36b5 DependenciesID=7fab00856455eec4f4afb8495048db19 StaticDependenciesID=df72d89fc6813939d670b7873605e0d5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteSound1.png
+  importAddress: Guid(1329fb5c2e62abd47b05c80c302f6a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteSound1.png using Guid(1329fb5c2e62abd47b05c80c302f6a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0087765f6d8bf0bf8cb05d7955b58bad') in 0.0314111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fd39a397542ea80ab4bf82dc0f42c77 DependenciesID=2bf7fe547151a21f391e89ae8ac528d2 StaticDependenciesID=2e9b708e3ef0cfde0856953ab8e05a2e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock1.png
+  importAddress: Guid(df0be2e7a485c8b4f81eb0c982041bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock1.png using Guid(df0be2e7a485c8b4f81eb0c982041bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b7fe43e6e188d690e8e4a11af2685a9') in 0.0313399 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8401ef618f166f361d2ac5945b1e2534 DependenciesID=c3aaf91d904b02c4e78c49d21ac29784 StaticDependenciesID=c6ae77c87ac96243e568494b3fbe7d85 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear3.png
+  importAddress: Guid(fa725701723ea3d4e9a769bb6586a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear3.png using Guid(fa725701723ea3d4e9a769bb6586a26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8a921f2ae28c08c8fce52efd5efb575b') in 0.0262419 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dcad00113eb3149de9d3bd5ac7373bb2 DependenciesID=d79ad06456b1adf18639a6e8fcbc92f3 StaticDependenciesID=f5ee34dc8c0fb9a2fa508eb322f36e87 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle1.png
+  importAddress: Guid(f66c6f25dffc73d42baa09f7a1a362dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Circle1.png using Guid(f66c6f25dffc73d42baa09f7a1a362dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '64451fd37225d47517bbda3d43e8b4fb') in 0.032669 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14a548937982a816a3c94581c94599a4 DependenciesID=6f1b4d51fbb3a559de55c37115d1a894 StaticDependenciesID=24c7ce7b080f992f50f55a82586d0a9e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Status/Scripts/Game/Player.cs
-  importAddress: Guid(0c7e0b6a908d26445b8dbab43f7d33d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Scripts/Game/Player.cs using Guid(0c7e0b6a908d26445b8dbab43f7d33d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ff1e2acce6eb01ded2da78d61a9b1cc1') in 0.0122553 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=56612cbb7a19be4863b895d9b4f820b3 DependenciesID=defdffeda139df2e48c5b5f5ca3a8382 StaticDependenciesID=e06c21ff8c60c21e3ac5aaa2be6fb026 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell3.png
+  importAddress: Guid(f13dda3ed9ff6864da3db50ae0a2e7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell3.png using Guid(f13dda3ed9ff6864da3db50ae0a2e7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4e2312a941688a3d578eec5f89d125d6') in 0.0333606 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0970ec8f6e41b7306999d63d9c32d275 DependenciesID=aaecca9bba752c20efe077eb0a918ead StaticDependenciesID=3f17d78b819203e3203a4d3714bcbdb8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button4.png
+  importAddress: Guid(2eb8e4ebd66b2e74aac89d20b26476a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button4.png using Guid(2eb8e4ebd66b2e74aac89d20b26476a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4a749786c5427c261f20e0428d6e98c3') in 0.0348002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36df1059db6fdd399058855fe9d47104 DependenciesID=1d428043b5fadb6b1a75df04d99140b0 StaticDependenciesID=bb73c1cebec8e3b394f45a2c86805e00 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play2.png
+  importAddress: Guid(03e7101fac6826644b6ebe9313c59c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play2.png using Guid(03e7101fac6826644b6ebe9313c59c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4142c935f11183a802a079bc149a76fc') in 0.0240143 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=58cc9bed3771d76ec3b59b1860774c7a DependenciesID=97bf5636c3fe962689904c28af0e3d6b StaticDependenciesID=4b1dfebf17da3a106ab308906fb2b6e2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play5.png
+  importAddress: Guid(eb309a20165c63f4a83cddf3f5a53783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play5.png using Guid(eb309a20165c63f4a83cddf3f5a53783) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fa17958c360147b020bd228125b9aff3') in 0.0330021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6593c2eb5bc082c2c5321c574513bdb8 DependenciesID=e5cc845c707db6ffebcb3b79edd6ae9f StaticDependenciesID=7930b4588753c4f3b95c5bfdb6c64dea 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play1.png
+  importAddress: Guid(031085567d7691045a9960a405e9b4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play1.png using Guid(031085567d7691045a9960a405e9b4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '613c00ec0044ef2cae38df3a2b56ee84') in 0.0293814 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7bf2b8f937a4ce2ba1c7e507f501e65a DependenciesID=effd33509259786263d74592bf6b33ea StaticDependenciesID=aaea7aabaf3bc635073910d3589be9ce 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Next5.png
+  importAddress: Guid(707fd6be2deaf004c9059c28f1a1e73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Next5.png using Guid(707fd6be2deaf004c9059c28f1a1e73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '66e4e2e27cf0daaa68f71b4cde2c8f8e') in 0.0333872 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c6f32a8b8782b567af8ecaa087d71cae DependenciesID=ddefad880479e70d170a62b68a318a83 StaticDependenciesID=56dda909e677bc70de283248e843474d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play3.png
+  importAddress: Guid(1efa7228f80bad443bc099190ea1f4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Play3.png using Guid(1efa7228f80bad443bc099190ea1f4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7cd334cea88c0b4387916c7c73634394') in 0.0238157 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=db5f8e6533cb57f0b2c469b4db89a81b DependenciesID=0ddc989a4d847118b9e9457e743c83b5 StaticDependenciesID=20fc52e85a6f7540d4c2b38ce3a5286f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause2.png
+  importAddress: Guid(73db22f86d46d03458dc00eca509baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause2.png using Guid(73db22f86d46d03458dc00eca509baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '08c5443a7d277dab4d4cd7c97f7b7eae') in 0.0299754 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5aa70829eecdc687b11c2f0840677a21 DependenciesID=f17dc6359825fb57ac4dd5dcef12bf0a StaticDependenciesID=f1bc6529ea9cccacf284979cf7dc74af 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/NotColletedStar.png
+  importAddress: Guid(8fb2947dc30d43a40b31fc0cffd75137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/NotColletedStar.png using Guid(8fb2947dc30d43a40b31fc0cffd75137) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f0627a7fb009b407134a55225f188364') in 0.0274099 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=40c5cd57f9d19ddfb8cc882569976a1d DependenciesID=4ad680c36c70380f31e0e366a5e44945 StaticDependenciesID=2ea83ec91b6d712039c3691f92db91dc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond4.png
+  importAddress: Guid(78d94433c0319964180fafb2f83550af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond4.png using Guid(78d94433c0319964180fafb2f83550af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9f26385986830edbe3a9dd53c523da22') in 0.0303451 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=17bb97bba8c6c9abac7ebe532f8414ca DependenciesID=ed752f4eaf93c3e3806cfe76e391f223 StaticDependenciesID=54b835444c3f62f88984909d0f89366e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound2.png
+  importAddress: Guid(a61abe5dacead464697fb215ea771915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound2.png using Guid(a61abe5dacead464697fb215ea771915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '90e4bed4c4a82e83351b346ec48cc2f4') in 0.0290461 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=58327accb3473115338f3b32a908dc41 DependenciesID=3f743fcc85d0e2cbb20cc8171c0e2376 StaticDependenciesID=70ab7867c26a3d2f9833be7aba982e8a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear1.png
+  importAddress: Guid(6abe9f66c6955da47a1064887957b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear1.png using Guid(6abe9f66c6955da47a1064887957b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5af6217fa7afa31327ac2beab9ef92b0') in 0.0378344 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ef0aca8fa9919abd831f3acb4e334a4d DependenciesID=3ac1dd137baec16b55d4706a33867fce StaticDependenciesID=b28fcf719e66c519cdd7bcbe2021c0b1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Heart1.png
+  importAddress: Guid(3458881f47da54d478ddf01df4f4884e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Heart1.png using Guid(3458881f47da54d478ddf01df4f4884e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '948f6484ae8706ec26f7337f11a0c7fe') in 0.0258512 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6843e9383f8872f0df7746ec9c609020 DependenciesID=67daa0a3bbe50673d518ee3fa3770dd6 StaticDependenciesID=7647a45d6a2e6c69ebd842f117475dbc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation3.png
+  importAddress: Guid(a9a546453bfd57242a1a0344207c1bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation3.png using Guid(a9a546453bfd57242a1a0344207c1bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4299083406aa99d8fd2b273f91ef16d4') in 0.0199775 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f6e7803d715edf45a3ffedb893a991ba DependenciesID=b130ea77084df769775c54cefbb80729 StaticDependenciesID=f2d10f7c3de16a4a96ce08f3ca0f438b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteSound2.png
+  importAddress: Guid(806246880cf47e849983a3e3e726702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/MuteSound2.png using Guid(806246880cf47e849983a3e3e726702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2cf3cd107ce21df15fcad58a74232f8d') in 0.0261016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b66a03e611dab965a6cec4a7a231451f DependenciesID=142d46e6cfc887ed4fb77d70cf6d768b StaticDependenciesID=f22e4367846744709f4229f737c6bf81 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound4.png
+  importAddress: Guid(3797127985e20b1469fa49cf1dd03364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound4.png using Guid(3797127985e20b1469fa49cf1dd03364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ece6dd07541cfc0a5ca640972c0568e9') in 0.2219783 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a73d770ae067b794b51ec74b0214b64f DependenciesID=600f7fa78c7fe90babe6b40588440f7a StaticDependenciesID=8ad8afddc51925180b85d575c1724eaa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Coin2.png
+  importAddress: Guid(5c75984c70758d04893cc869aaed74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Coin2.png using Guid(5c75984c70758d04893cc869aaed74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5134f0f69456d18bdaa6bd9df21b46e3') in 0.0627978 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b500be202a1b6c21eb82338acedd3963 DependenciesID=69a8e0743e510e6691685fce55c0ab5b StaticDependenciesID=2f0b6c17a67aeca6c5e40a3d91367429 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock5.png
+  importAddress: Guid(5e18032a41ede144d8c4325e78961467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock5.png using Guid(5e18032a41ede144d8c4325e78961467) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5b0727eaf39e3846b57fe7b84db91fb3') in 0.0276746 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07af058bdd7ffe53463efc14550e07bd DependenciesID=5a58811f517ff4e67b717f90d15040f2 StaticDependenciesID=7e034455e7f93dcbb03cbe56b4b4766d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause3.png
+  importAddress: Guid(ea372b4e73f9a6c4e9e426dadc1504f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause3.png using Guid(ea372b4e73f9a6c4e9e426dadc1504f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0299f55cbb1b5340b6291abccd62b64b') in 0.0212757 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=67ae54255d83d94ca9650b27a70ddfbd DependenciesID=5c37b3fbad2a0b3c56f7672c60236953 StaticDependenciesID=a36e03bdd839442b78b4cba502017ad0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell5.png
+  importAddress: Guid(c77abe81d8850d140a586d661ed9dd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell5.png using Guid(c77abe81d8850d140a586d661ed9dd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0a2f32a1339a4b93759a48be719ec8c5') in 0.0217188 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ceca1120c36ace8e176156c74c4fef2 DependenciesID=ca62b496fed8e7951ec2a8c6cf4f72d7 StaticDependenciesID=53d38f7a0584cf2fb1ffdd986fec0884 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Next2.png
+  importAddress: Guid(57841ddfb0065dc4697f85cc1269eed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Next2.png using Guid(57841ddfb0065dc4697f85cc1269eed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ab613dc312a1b1adff05f10c6e5d2f7d') in 0.0212473 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b24f27f503a292d00d1e11f82a241c8f DependenciesID=aefdf11e02a5a59cd3795752af2a4a29 StaticDependenciesID=d8ad7c0dddbcb45ec023bd8eae118edf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond1.png
+  importAddress: Guid(297a993ac0e8a1545b9a280a801b9688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond1.png using Guid(297a993ac0e8a1545b9a280a801b9688) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3956e381d5c06f41dfa395d4f53be6f8') in 0.0285699 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f57447936aa8aa1e3445be4dda482f1b DependenciesID=17d6a9950cd58390410e8a1da7d5eb29 StaticDependenciesID=d8cc687c25f346aeb4bccb21c09f715a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock1.png
+  importAddress: Guid(b79f6c4620f6a234d8a8f8822905469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock1.png using Guid(b79f6c4620f6a234d8a8f8822905469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1c6cd943fc45512d6b140fb48b7b596d') in 0.025255 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b9bc8b247d83a89e7a874525e99108f DependenciesID=f5a1b9313c1a430d7e22417d82732a1e StaticDependenciesID=b851ef82f3894cc2877c52b6a3d5566d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic4.png
+  importAddress: Guid(3ee0bbc027b9e1947b562a9fdd82c94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableMusic4.png using Guid(3ee0bbc027b9e1947b562a9fdd82c94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '29158a17d553260f33204e677415fc95') in 0.0202233 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ad1ed1c9eab8043c28a7b18c814c7748 DependenciesID=a9f360b96397f487d5e3137bb6bcdcf7 StaticDependenciesID=f95cb7f2853288cd7ead6bcb66860e64 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
