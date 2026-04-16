@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-15T11:58:57.1339243Z"
 Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) Professional' Language: 'en' Physical Memory: 16091 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-15T11:58:57Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-16T19:39:40.4394172Z"
+Date: 2026-04-16T19:39:40Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/medoo/OneDrive/Desktop/Status
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-36381
+13453
 -licensingIpc
 LicenseClient-medoo
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/medoo/OneDrive/Desktop/Status
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [18960]  Target information:
+Player connection [22028]  Target information:
 
-Player connection [18960]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 3743986385 [EditorId] 3743986385 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22028]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 1806794925 [EditorId] 1806794925 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18960] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [18960] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22028] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22028] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -93,17 +93,17 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-medoo"
 [Licensing::IpcConnector] LicenseClient-medoo channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-15T11:58:57.9733837Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-16T19:39:41.2369978Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              50bc007fb73e4544aff933457189f97c
-  Correlation Id:          2ee1e92ec3b6b116772be180ca2748c6
-  External correlation Id: 6164287033591898825
+  Session Id:              5f84f639d08c45cfa9401195eaf45dd0
+  Correlation Id:          e6a479592fdfd49f6d323fcabd19a0d7
+  External correlation Id: 7113419077218334233
   Machine Id:              agf7rBPk51ccx3CzQra/GLhDOyE=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.70s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-15T11:58:58.6812644Z"
-[Licensing::Module] Licensing Background thread has ended after 1.55s
-[Licensing::Module] Licensing is initialized (took 1.20s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.92s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-16T19:39:42.1646445Z"
+[Licensing::Module] Licensing Background thread has ended after 1.73s
+[Licensing::Module] Licensing is initialized (took 1.25s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 11270634123586-UnityPersXXXX
@@ -112,7 +112,7 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
   Expiration: Unlimited
 Got setting from build profile YAML, name `m_BuildTarget`, value `13`
 Got setting from build profile YAML, name `m_Subtarget`, value `0`
-Refreshing native plugins compatible for Editor in 23.84 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 36.85 ms, found 7 plugins.
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/medoo/OneDrive/Desktop/Status/Assets
@@ -133,7 +133,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 CodeReloadManager initialized
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
@@ -143,14 +143,14 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.004084 seconds.
+Registered in 0.003349 seconds.
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 207 ms
+Android Extension - Scanning For ADB Devices 254 ms
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -158,23 +158,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.654 seconds
-Domain Reload Profiling: 1083ms
-	BeginReloadAssembly (128ms)
-	RebuildCommonClasses (30ms)
+- Finished resetting the current domain, in  0.655 seconds
+Domain Reload Profiling: 1038ms
+	BeginReloadAssembly (107ms)
+	RebuildCommonClasses (32ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (198ms)
-		LoadAssemblies (123ms)
-		AnalyzeDomain (187ms)
-			TypeCache.Refresh (186ms)
-				TypeCache.ScanAssembly (174ms)
-	FinalizeReload (654ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (105ms)
+		AnalyzeDomain (170ms)
+			TypeCache.Refresh (170ms)
+				TypeCache.ScanAssembly (155ms)
+	FinalizeReload (656ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (295ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (101ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
+			InitializePlatformSupportModulesInManaged (347ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (83ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 ========================================================================
@@ -232,7 +232,7 @@ Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 13.81 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 3.83 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -244,587 +244,35 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.483 seconds
-Domain Reload Profiling: 2818ms
-	BeginReloadAssembly (259ms)
-		DisableScriptedObjects (67ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (934ms)
-		LoadAssemblies (643ms)
-		AnalyzeDomain (385ms)
-			TypeCache.Refresh (257ms)
-				TypeCache.ScanAssembly (233ms)
-			BuildScriptInfoCaches (114ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1483ms)
+- Finished resetting the current domain, in  1.678 seconds
+Domain Reload Profiling: 3501ms
+	BeginReloadAssembly (205ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (131ms)
+	LoadAllAssembliesAndSetupDomain (1447ms)
+		LoadAssemblies (552ms)
+		AnalyzeDomain (977ms)
+			TypeCache.Refresh (876ms)
+				TypeCache.ScanAssembly (836ms)
+			BuildScriptInfoCaches (89ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1678ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			BeforeProcessingInitializeOnLoad (244ms)
-			ProcessInitializeOnLoadAttributes (655ms)
-			ProcessInitializeOnLoadMethodAttributes (266ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.01 ms, found 7 plugins.
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (217ms)
+			ProcessInitializeOnLoadAttributes (675ms)
+			ProcessInitializeOnLoadMethodAttributes (277ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 7.51 ms, found 7 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8892 unused Assets / (6.1 MB). Loaded Objects now: 9670.
-Memory consumption went from 183.7 MB to 177.6 MB.
-Total: 11.730400 ms (FindLiveObjects: 2.134900 ms CreateObjectMapping: 0.725800 ms MarkObjects: 6.599500 ms  DeleteObjects: 2.266700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 64096.131720 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/41.png
-  importAddress: Guid(ea6118d03bf19c4409de2cd38674b069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/41.png using Guid(ea6118d03bf19c4409de2cd38674b069) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '156bb5f4aa1e688100521189af738d44') in 0.1444403 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f4cdd825e2650761eb5f19dcbbb1ebb3 DependenciesID=1724592840522d0af3bb17f2fc948b2c StaticDependenciesID=86e23fd635d86030d01e3a9ed758d7bf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/07.png
-  importAddress: Guid(d14021cdc42161e40bc6a8e3f2c09cc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/07.png using Guid(d14021cdc42161e40bc6a8e3f2c09cc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0ef9a8037edbd78651c8ac348c784f9a') in 0.0465532 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0e970eb611d01c7ac294b38fdb1ee3ff DependenciesID=6657653556f0dac24c300fb3de665840 StaticDependenciesID=bdbe7bb830b0f2cd50eeabdc3aafda9c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond1.png
-  importAddress: Guid(297a993ac0e8a1545b9a280a801b9688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond1.png using Guid(297a993ac0e8a1545b9a280a801b9688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4d6474813642bf6a2c331891a7375a43') in 0.0346058 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a06e60b964cb07fc6bb3612e673a1ab3 DependenciesID=b57fab8a69d547ea42bff08bcafd7414 StaticDependenciesID=481239956651c7eadabb9c6c9b7480ff 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings4.png
-  importAddress: Guid(d54e0ee497f3c7f419af60020b22c47e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings4.png using Guid(d54e0ee497f3c7f419af60020b22c47e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'db4e5a2860f32a052c54434f5de68b23') in 0.0393752 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=294bd231f7154ae481e22db2eb698836 DependenciesID=5641e798f71f86de27e2c2a567f14948 StaticDependenciesID=b98cc483d3fad0ada0e6552a4ef488a8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock2.png
-  importAddress: Guid(21870ab7b8097874cbf3e2e57fdf6794) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Clock2.png using Guid(21870ab7b8097874cbf3e2e57fdf6794) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e929df36407bf1b86839cc15d609ec96') in 0.0351497 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7e0d40bf081db1a776514b50d6017928 DependenciesID=5621ebc3f5078418facba2c5512fa37c StaticDependenciesID=3622b5ef9590d9ec03958e141b2861b5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button3.png
-  importAddress: Guid(9c6b6e6a3fe43cc4bb1cc45d04596241) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button3.png using Guid(9c6b6e6a3fe43cc4bb1cc45d04596241) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c189d98c4a6a85d152d14c3fde4bf038') in 0.0852269 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cb7e1e897bb5257668ff7360e75b3af5 DependenciesID=789a37f8587152e8fade49e83522e6a6 StaticDependenciesID=a36b3ff3bf2121e3e1d640f6af34185b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/45.png
-  importAddress: Guid(8ccaf236f0b097346835f1224db94189) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/45.png using Guid(8ccaf236f0b097346835f1224db94189) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0c56210cbb5c351799d80ed807222293') in 0.1091089 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a4466400015e05a14b85d2fb7938babe DependenciesID=fe85ba548920d10abeea00ab90d578fa StaticDependenciesID=9cd170c1330940d70affd35c89ad039d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Back4.png
-  importAddress: Guid(fb92f908abf426c4e8bb94e1dd86afe9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Back4.png using Guid(fb92f908abf426c4e8bb94e1dd86afe9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9e0e38b34f608fe1965d8bf48b73ea00') in 0.0381053 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=777e699853997b576026d2f5d4f39b62 DependenciesID=a43818bef4ef38e51d2e35e0ec060372 StaticDependenciesID=de04071f42e6bad07a14fc6743f52fed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/42.png
-  importAddress: Guid(1cebcc9a55f25544ab77df0e8c945220) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/42.png using Guid(1cebcc9a55f25544ab77df0e8c945220) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8f8a12876643d3d13f9f329171ba1e67') in 0.0407892 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc12af0299ec8cb6971ab4c1bc6db338 DependenciesID=e012f8ed8b6a7100f5b70a4f1ac91fe6 StaticDependenciesID=8c5b3a3b415468056f10e990abf82d53 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/76.png
-  importAddress: Guid(4e31ee4fcaba2d6479e8055c70703602) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/76.png using Guid(4e31ee4fcaba2d6479e8055c70703602) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ef0ec5029a7c1e531dbc0d414aaf1bdb') in 0.0338362 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0c528e5c368ed00380553494d941d3d DependenciesID=4eb2f4de8e1a8d492c5138ba978013fe StaticDependenciesID=9c22935ac5b6374765bdd46a58c72d8a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/48.png
-  importAddress: Guid(e4fbddbca74651b46b47e972718613dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/48.png using Guid(e4fbddbca74651b46b47e972718613dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c94d39b8fbb5619042f81a90e245c922') in 0.0431517 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18788206c3bba5846f8f2458e7d3ba67 DependenciesID=76d6cb7eaa3fe9560a6a93798befb4d6 StaticDependenciesID=94365213c02d5bbfec005d71d20a6202 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings 2.png
-  importAddress: Guid(9b5af337bb296d141a8fc7b3a8e52936) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings 2.png using Guid(9b5af337bb296d141a8fc7b3a8e52936) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f921dd32d891eeab75d9bdf16b76ea65') in 0.0409984 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0ce189e598e693cc676a10b38bf15f5 DependenciesID=c79c44b7d85ddd2e22b7e9937200778c StaticDependenciesID=58fbcd94b0fee83a7651b0b20410e091 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/CoinPanel5.png
-  importAddress: Guid(3e362b4a467a2b34e824790570a8be31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/CoinPanel5.png using Guid(3e362b4a467a2b34e824790570a8be31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd825cea214a5535b996006d04922c188') in 0.0366992 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=284c83baedc98202299aece1a9f2447d DependenciesID=68ebc248599e9efd6b51c6be3d592315 StaticDependenciesID=59df58e2bee08c4c2a3785c3842c1384 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Star5.png
-  importAddress: Guid(dc07e6a2d97b2f241b35845ad0279b15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Star5.png using Guid(dc07e6a2d97b2f241b35845ad0279b15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f22f2e5046fce0085585b7961a0e893f') in 0.0340277 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f4fdf746e533e86bf93a41e6cab68b8 DependenciesID=af775799ea1b6dfd4816a201139a137e StaticDependenciesID=4e4cfd6a13ba0aff46cd739fe924d834 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock5.png
-  importAddress: Guid(5e18032a41ede144d8c4325e78961467) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lock5.png using Guid(5e18032a41ede144d8c4325e78961467) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '037c395fbfc87b99c30e989a53abe026') in 0.026605 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c22e06a3a1584b8bee2aa73d1305dae3 DependenciesID=b9f5fbd5fe48e7ca2f9f0ebb67f2f4fe StaticDependenciesID=97d53f7739b5820b00aca5da8f3cf0cb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings Banner 1.png
-  importAddress: Guid(e3df6d80d0b7a85438b1e8718e67e566) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings Banner 1.png using Guid(e3df6d80d0b7a85438b1e8718e67e566) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '808fdbc32e739c40ad3f2736b9c36189') in 0.0421592 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b695b202bacdcfda47aec3d8a77a46c3 DependenciesID=7b8b54105987cca59bf2ea0d1c9cdb01 StaticDependenciesID=606575351aae62039fd11d0220615c9f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Star3.png
-  importAddress: Guid(5f01f4f017b369c48812edd68a27fd46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Star3.png using Guid(5f01f4f017b369c48812edd68a27fd46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bcffaa509cd3cccda7eb641f9a4011b6') in 0.0470728 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=17e0fd48ed8dd27863f7fad626fa1e88 DependenciesID=f96be71dc134d300489c0cccf576de8a StaticDependenciesID=9c66951b26b5079aba7ba9d7d8dcb2e3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Coin1.png
-  importAddress: Guid(7aae616d6777c964c9cc1ade3486634f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Coin1.png using Guid(7aae616d6777c964c9cc1ade3486634f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ee3d330cfa3cf314cd9f759ae0ac05e5') in 0.0378352 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c42ace7631fdc174b52ed60cc3cac1ef DependenciesID=19dff868ed9f253819138c5cfd39d72b StaticDependenciesID=cb4a027bf90005648d79033bf16e6b7f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/60.png
-  importAddress: Guid(5f10b98617566e24ba82a5a5dbb78adc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/60.png using Guid(5f10b98617566e24ba82a5a5dbb78adc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9c8b23e48e5acd3b13ff1c76eb46dd92') in 0.0342914 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01c552966c6ddc079764ac65892cee28 DependenciesID=6a2d7965c89c5083432989446a74ea7d StaticDependenciesID=09c55e1bf30e8881604c82c75238c71d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Yes2.png
-  importAddress: Guid(149c2f118f877344884ff4af1ac66e02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Yes2.png using Guid(149c2f118f877344884ff4af1ac66e02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'af6a669230ea1c06868f2a3f3a27e02d') in 0.0321471 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=803a69a3f1fc6f9d5db506af9f571235 DependenciesID=9dcb65a30803b3c944119acecfd044dc StaticDependenciesID=2b94bd8bf9c85f82d0d84193c1104b38 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Plus3.png
-  importAddress: Guid(2eb1fe4e77b93d24898175f119b941ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Plus3.png using Guid(2eb1fe4e77b93d24898175f119b941ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3296d56016e42a89385d41f05c7263d6') in 0.0429031 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d124c30a4b2098a94fedca810f1410f DependenciesID=a049552bb72c5cd64d4b7d03b1edacda StaticDependenciesID=42db3b3fe821b9a02d0ca72f9564dd78 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/08.png
-  importAddress: Guid(5b8927c87e9aa1c4fbf441d0fd8e7564) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/08.png using Guid(5b8927c87e9aa1c4fbf441d0fd8e7564) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8ebbb475a9a26a5f49362c258cfa54f9') in 0.036899 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e855fa8bba61c582e4546d13ea490af5 DependenciesID=5e4b79373e9d7af5d5d60c828e3b4cd8 StaticDependenciesID=b8fcc33b6fa138a29fa46b082a52a370 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond2.png
-  importAddress: Guid(b023e794e1bd17b47bcf04b6405586d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond2.png using Guid(b023e794e1bd17b47bcf04b6405586d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c01767e223532aa66788e72cb1d0e9be') in 0.0364547 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=53795e8347df89b233b127b030f5a7b9 DependenciesID=f751b8c92cdcfbe93be0a458ff18a5ee StaticDependenciesID=ce7eec1b3509b2561512ef45d5481f0c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button4.png
-  importAddress: Guid(2eb8e4ebd66b2e74aac89d20b26476a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Button4.png using Guid(2eb8e4ebd66b2e74aac89d20b26476a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f6738a07146111c067bb10ae5e06eb22') in 0.0558107 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e5b62481c0dbcfa999fcacb883f5d7a DependenciesID=71e42f79780d23441290fe522f336ddd StaticDependenciesID=0596545fe4b6114ef3adf6c3987565ff 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/73.png
-  importAddress: Guid(eed85442b4e451744ae8e261122bb651) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/73.png using Guid(eed85442b4e451744ae8e261122bb651) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '816bf84f3fe564af9c6d05c1890b9c64') in 0.0372284 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb1c208d75283a34e51969b4ab114a4c DependenciesID=523a66ce8727e99eb39125e28e863d8b StaticDependenciesID=3ba8d2b5806d47262c4bdcb4f1fdce8c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Hearts 2.png
-  importAddress: Guid(8fd93b284c23f4c409507c615e9ca5be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Hearts 2.png using Guid(8fd93b284c23f4c409507c615e9ca5be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '30e618162faebe3166c430174b42e3a1') in 0.0368782 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86e57b311d8b920b751953ef38f6b76c DependenciesID=557636ae2571fd2a415b96e08b9dec6e StaticDependenciesID=85090442e3756d5bc61b4c4e6db71a87 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/36.png
-  importAddress: Guid(f48138ef411962b4ca529920caddc550) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/36.png using Guid(f48138ef411962b4ca529920caddc550) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2866b1dd8fccb8821df6e394e8ee2e3e') in 0.0360526 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ccaf1be7457a69abc91d1d96838d833 DependenciesID=f587a2da5f921a1debcbaaf2c14d9072 StaticDependenciesID=4725a392d54c599726816650f8e99a8a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear5.png
-  importAddress: Guid(06f22ebfc058ca1469ff32c54e1f0fdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear5.png using Guid(06f22ebfc058ca1469ff32c54e1f0fdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3dce28e0488727cf402544cba751b68a') in 0.0372801 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eb8ac2dbb1093b7130470fbd1f8eba2a DependenciesID=7a8c43ac00565e5678a4d80f940cef75 StaticDependenciesID=1897549aa34a105ae693d7bf6f8a5ff9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/14.png
-  importAddress: Guid(61238a5b17b39ad419f47217a9283620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/14.png using Guid(61238a5b17b39ad419f47217a9283620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'feba98c826311c57285365e2315f678c') in 0.0370389 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5529b1d96206024feca37cce383f6044 DependenciesID=9fbfb6158cf526331ce585835e491b05 StaticDependenciesID=08c69769d5937b17f87c1347491d9632 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Coin Panel 3.png
-  importAddress: Guid(13a8d697c187103428b75f7eb80731c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Coin Panel 3.png using Guid(13a8d697c187103428b75f7eb80731c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6cc688226277941666efa08e20ceffab') in 0.0417872 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c445b4ddb04b1aa8a2a57201b6f43dff DependenciesID=c1164645d4e69c03360656f16e6ca18e StaticDependenciesID=09de5e462604ebec0295fa66fef85d99 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/49.png
-  importAddress: Guid(2bddd254ad31b4d4e9e1ca4e890a0fcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/49.png using Guid(2bddd254ad31b4d4e9e1ca4e890a0fcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cf0340d51ecd71fddba49b25252b3007') in 0.0369556 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2dd0ec631e827e2e5270963ded2d187e DependenciesID=743168bb6f60494306cb2bd1c94c33ff StaticDependenciesID=4ebbb7807babe92234dca549d000fc76 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/34.png
-  importAddress: Guid(47d5df21ed602434a9a6b8a2fba29bf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/34.png using Guid(47d5df21ed602434a9a6b8a2fba29bf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '63aedad28fc0eb9bc3e945f90a717bf9') in 0.0378415 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=678ca04a6c2bba0c62375d492ab5cd8e DependenciesID=ccb061c5a2bd0c11abef4282b2c7cf6d StaticDependenciesID=e43ca070bc8b019eb369c746098bef25 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lightning3.png
-  importAddress: Guid(d48097a0dcead254ba4ebdb635874538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Lightning3.png using Guid(d48097a0dcead254ba4ebdb635874538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '694368264aa1cbb5d3021bcf7bc256f1') in 0.0349687 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8a59ca4b52dd1ca0f46a32d0653b2663 DependenciesID=cfbd677d1d0229190ba97a1b7cd25a66 StaticDependenciesID=c2e19387b41c146025bd8caa0e2a63f3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Plus4.png
-  importAddress: Guid(0a2085d0f0e6c5e4daff2f34ef7be26d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Plus4.png using Guid(0a2085d0f0e6c5e4daff2f34ef7be26d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1689ec779532b06952b35d3af84a3863') in 0.0405435 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=765783c515a4e656776a458039adec8e DependenciesID=ee5ac464ec942c37454cd59bb1f61e17 StaticDependenciesID=e261dea8f0fbe61708770920a107b76b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/StartPanel1.png
-  importAddress: Guid(ada3b8a9230f6cb44b3aee84b3357181) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/StartPanel1.png using Guid(ada3b8a9230f6cb44b3aee84b3357181) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f3626bb986af87dee82d9054a4780f70') in 0.0357769 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=118ded46384bb4cd49ee550d8f4d41b8 DependenciesID=f08669602fcbfe31067da49d7f758e17 StaticDependenciesID=45f715d3f4930b580cc9ae1a8b92b41d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell3.png
-  importAddress: Guid(f13dda3ed9ff6864da3db50ae0a2e7d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell3.png using Guid(f13dda3ed9ff6864da3db50ae0a2e7d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fd54310b5b7d68baedffb01442088655') in 0.0334972 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dad26d288e09866b17e680ee535dc62d DependenciesID=74276026d081b6dd6ad638044b5dbd3d StaticDependenciesID=4b22a559b51a3eba1fcd73e6fb4c05e8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/quit 05.png
-  importAddress: Guid(ac63635201c6b6e469a3f532f31a37e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/quit 05.png using Guid(ac63635201c6b6e469a3f532f31a37e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a51c0fbcc413a36a129cc569e0665f54') in 0.0363143 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ee1c2980e3e7c9c859b16dc89565473b DependenciesID=7e9b04b603e213fdd60c988bef2cb672 StaticDependenciesID=057465718db989f541495c515c391df9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings 1.png
-  importAddress: Guid(7d087bcb630ea4c4d9e561f52c90bf08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings 1.png using Guid(7d087bcb630ea4c4d9e561f52c90bf08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9eba964b016b7773749c9917ca28c30d') in 0.0332169 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8472ea66f6533896eb83e735eefc2b6 DependenciesID=0030eeec0a9f36a216508bce7a09ea82 StaticDependenciesID=cfce735d021d3a18645936fde1a45ebb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation4.png
-  importAddress: Guid(c9bb25a6dba0b5d4ca134a26e6e6c7c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation4.png using Guid(c9bb25a6dba0b5d4ca134a26e6e6c7c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '373766dac7da47c412b229152edb6ed0') in 0.0343655 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aee79a414ea5ed0196b4b909daa4e4dd DependenciesID=c4f09283a089d10ea76beaf9f0ae3fec StaticDependenciesID=300e36bd1cc2638df1cbb323cad98df1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit1.png
-  importAddress: Guid(9cd31f8863133aa4f8c26663abed5a99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit1.png using Guid(9cd31f8863133aa4f8c26663abed5a99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '20ea940f12d1fa4e516390254dedb8d8') in 0.0453225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f29111fe2d3892a617ca18115063c012 DependenciesID=992cadb35199b3796470ebebef37f679 StaticDependenciesID=c1e7ffb2798f9bd51aaad40d0843f571 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause4.png
-  importAddress: Guid(05ba65ce7082bb04aa23eb9ae020cf0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Pause4.png using Guid(05ba65ce7082bb04aa23eb9ae020cf0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8d088afd0ee9fba06d3ce421a71dfb45') in 0.0296726 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1cb28edf312fb31508f7afc6517c3619 DependenciesID=c9b851f59c0ab4cb99a4513f918c3bbc StaticDependenciesID=cf9b840d3de41e48537e3a6feb7e27f3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/02.png
-  importAddress: Guid(1c5860d872450c34c83385edb279e3a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/02.png using Guid(1c5860d872450c34c83385edb279e3a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '898bab2fc4554390ad7f49c2528fad42') in 0.0422205 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14b0af870b44c6044df4b1a91142e58c DependenciesID=ebbe1eba9b71102395ad8eaaf272a3a1 StaticDependenciesID=55d03a68a7bed569e2c9e1f3efd56f7d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/57.png
-  importAddress: Guid(ed7751f516ebda645afabb905760c670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/57.png using Guid(ed7751f516ebda645afabb905760c670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8dd13e17d903e55f2f7c6202152c7d10') in 0.0376241 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca1fa009d2b57266703f329d902ac891 DependenciesID=81897b0dee9a95f9a69c0290c17702a6 StaticDependenciesID=3363399be2e8dfa62357462edc221138 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/13.png
-  importAddress: Guid(291e870b844f87c44bb1b9b8d5481739) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/13.png using Guid(291e870b844f87c44bb1b9b8d5481739) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dc6fcbe825fa7fcb71fc03b1bd5f304d') in 0.036241 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82e936375130e92c922277bb3ad28969 DependenciesID=e5e5a53bc09899845ae36c6b37b95198 StaticDependenciesID=315ab1970304815299a075d35ae98f04 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/31.png
-  importAddress: Guid(156bd53e6ea323642bd923c4873d147b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/31.png using Guid(156bd53e6ea323642bd923c4873d147b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bd479d68aeaee01a661d4128461c17d5') in 0.041926 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1021825df51d60219337c675887244bc DependenciesID=f08a4c25b13efe4595ab26d9bd37b459 StaticDependenciesID=a21adffb41a7a4697f46098f20cec2ab 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/NotColletedStar.png
-  importAddress: Guid(8fb2947dc30d43a40b31fc0cffd75137) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/NotColletedStar.png using Guid(8fb2947dc30d43a40b31fc0cffd75137) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '18af558fd141a37c3de67446beb0deaf') in 0.040872 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a69bca0559a3d78c5a88a8412990a55 DependenciesID=bbd5c2f4bef74801cdf530a46b04fe4e StaticDependenciesID=78c0d0498f4528720bf86d80dd5ad941 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/53.png
-  importAddress: Guid(0fc838b389f4cc74893b0a9cd18eaca3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/53.png using Guid(0fc838b389f4cc74893b0a9cd18eaca3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2d71fc865ef798b89d80fc8af07befd4') in 0.043053 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3da652b86ef345a651d156831b988f95 DependenciesID=f54fbc46b725d447d14eec2b325bd877 StaticDependenciesID=310266a83d345f840f666d5e82be0f51 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/15.png
-  importAddress: Guid(ae9773083325ce24a8a86d890ef173b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/15.png using Guid(ae9773083325ce24a8a86d890ef173b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '51a887e91c4b0cfeb20c984bc71f6844') in 0.0409629 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7fa954949c7ef802ae55daabf8d6b2f DependenciesID=3fe8d96fae21d61e4cf9abbfc546d142 StaticDependenciesID=5c3758d394e2becfadb137354fcfde36 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear1.png
-  importAddress: Guid(6abe9f66c6955da47a1064887957b371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear1.png using Guid(6abe9f66c6955da47a1064887957b371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '770535e5a13ebe909856b8785bb2a42b') in 0.0366261 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdd051a6cefe830bb7e99b700a5ae7a1 DependenciesID=ff33ecd54b9548f6f3401eb17507d461 StaticDependenciesID=f1f0bc5b58261b9720ca4fc004b1037d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/68.png
-  importAddress: Guid(6dd1f4110b7bf8445b1461e7bfbadc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/68.png using Guid(6dd1f4110b7bf8445b1461e7bfbadc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '62a4b15442d24a84c2cc28897f9cfe8b') in 0.0419489 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4f3b820993e06ee694be72b4cd9d598b DependenciesID=84a8e9a37518c9201b636aa62fae79bd StaticDependenciesID=2dbc9c5f77be5ef6126561d8e465c8cf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings1.png
-  importAddress: Guid(278de0721fc1de2438249b9aa21f49f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings1.png using Guid(278de0721fc1de2438249b9aa21f49f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cb80e3c889f3ad19cde9c80cc01947b9') in 0.0406232 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c43721ceb42511319c20fe48d61ec92 DependenciesID=d7bd189bfbe0f3aaeb905dcd4bdd73b1 StaticDependenciesID=8f391704e7e9db5766ab67c067aa528f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Play 04.png
-  importAddress: Guid(61f4c9a4da47f364a8dbd3253b47d4d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Play 04.png using Guid(61f4c9a4da47f364a8dbd3253b47d4d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '61c290d39e8f4b316dea61eefb65d2ce') in 0.0335435 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11d0fdb9bfda2d04f356dfd8cf5d5e43 DependenciesID=27533e1a0d2542078331b6d218cdec17 StaticDependenciesID=e97fe2c15a266e9656ef12d82e972642 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/28.png
-  importAddress: Guid(cc510b060cbdbbc43bc72f45efb94a3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/28.png using Guid(cc510b060cbdbbc43bc72f45efb94a3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '23e779ac5342009d5456e1bbb3866dde') in 0.0350397 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0c31d2a5be37e62497f4e57f5f8390d DependenciesID=d870d9bc0d2e0264370358b74e10183a StaticDependenciesID=4b8ec9eef112581ae1ad46fa6f710e75 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear2.png
-  importAddress: Guid(98f80d8d67575a14dba4125c06bcc98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear2.png using Guid(98f80d8d67575a14dba4125c06bcc98d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'caba9cba9082feb2f49be5cbbbc272d2') in 0.0398886 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=181112729e8d77b6437596ab184cbd9a DependenciesID=376b9dd8fb7a41ad33fe347f612300ae StaticDependenciesID=3e902f933f8995810c055eabadd5164a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear4.png
-  importAddress: Guid(68397a3090d4a3b42b83efb00ab8fc05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Gear4.png using Guid(68397a3090d4a3b42b83efb00ab8fc05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ecae092f98858e703bf7536c42f73c2b') in 0.0411541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=092ed6d263b91def1a58b0e0f69f6286 DependenciesID=532e05c93fae7f9eddc4d0e4ce42132d StaticDependenciesID=a4b543bd7863246aae8583ea436dd42e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound.png
-  importAddress: Guid(0da388717e28ba04fa0cbd35b94e9d27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/EnableSound.png using Guid(0da388717e28ba04fa0cbd35b94e9d27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a09ba0f3fee77fec262e45c458d9b986') in 0.0358772 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=00d7470b25e402592548013dbc83264c DependenciesID=9eb5a13ce2f8d52f5a30e336d128ef38 StaticDependenciesID=679108dd915e876197750a508f4c9dae 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond5.png
-  importAddress: Guid(5f29df022a9d76a438965295a99224fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Diamond5.png using Guid(5f29df022a9d76a438965295a99224fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b48fd8c4732388d4975b40c4cf6c1c5a') in 0.033875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=abe22f08d5d7639b1f6ffd4b4bc8ef81 DependenciesID=67aa6ca8be65138c5d8cb7407279c7a7 StaticDependenciesID=f6db681e34d317c5a01d32371437d3f6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/47.png
-  importAddress: Guid(ed6c2b5bd29923444a2b5e753b2b161d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/47.png using Guid(ed6c2b5bd29923444a2b5e753b2b161d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6850c47c2ab0426c44ae2b729ff262c8') in 0.0359861 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02899fa363944d5585aac5aed12b5452 DependenciesID=b003f73b87129f6455c981ffd40181bb StaticDependenciesID=0e25ae26f908ca3f2b0532b7df147cc7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/quit 10.png
-  importAddress: Guid(748777bda55584949b65cec6c29bbcf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/quit 10.png using Guid(748777bda55584949b65cec6c29bbcf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8ff430b6f3431c18dbb0175be8fad44b') in 0.0339844 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e62c29ce0d051690ca337cdff76f6b89 DependenciesID=f50f9829704c0a0d2a9558241abbd375 StaticDependenciesID=3f00842ccca3eabadb73986ad48f0fc5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit4.png
-  importAddress: Guid(a01ecc6dc02c3dc4b9c52d73e08295de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exit4.png using Guid(a01ecc6dc02c3dc4b9c52d73e08295de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '481f4f223ba14e782a4ea6d3ebdcb888') in 0.0374997 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8be8725003164fcff10afc5291297271 DependenciesID=4c6ede2111a3adb38b7bcfc949569d4d StaticDependenciesID=9a06ca29dab855d7d6e425dc5d11d363 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings Banner 2.png
-  importAddress: Guid(1ad2c67d97a04b74ea4b0403d3ea22b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings Banner 2.png using Guid(1ad2c67d97a04b74ea4b0403d3ea22b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f445b4a97ebf34f8c17f6fc4ad0b2e07') in 0.0351384 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=32873a7e7c0af517874b483c5fb11bf0 DependenciesID=bfea4291cf3fe9d6ca59797aa0c96c26 StaticDependenciesID=4ecd3f613113b6a8efdc2f091b28dd1d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings6.png
-  importAddress: Guid(7f2f20b17bca8f8429acaf31af37d5b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Settings6.png using Guid(7f2f20b17bca8f8429acaf31af37d5b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0edc0715d76957a525152c15d26e1d74') in 0.0427669 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0cb789598f4af394b7b7206150109b51 DependenciesID=84848837f95c6c0aa06e135d9ea92465 StaticDependenciesID=1924ac7f89ed876aa884f52ff8422b1f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/44.png
-  importAddress: Guid(5fc888aadbf8990449a045daddc3bddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/44.png using Guid(5fc888aadbf8990449a045daddc3bddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ba465c8fa8128a8714aee7c7a02b188d') in 0.0355024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=660507812e6f8c9010063ba99d84487f DependenciesID=935d4058b4e5dbec9e8291d5ba0b118c StaticDependenciesID=94f4c2ac01a11f550dccf25f51ed3d9f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell1.png
-  importAddress: Guid(57eb69ee46b57234c90f644e90e142c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Bell1.png using Guid(57eb69ee46b57234c90f644e90e142c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1a8efdcd4ddbeef06ac509f78d38acf4') in 0.0334243 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9bb0bff49060192146d4ec38892db76 DependenciesID=17c21b4b871600b5d6df9c51a4f00de7 StaticDependenciesID=7eafebf563c626b5e143ca8e050ba2bd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Play 10.png
-  importAddress: Guid(7449a977aafcce64a96befaa167b9e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons And Text/Play 10.png using Guid(7449a977aafcce64a96befaa167b9e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd80abe09ccf0a904ad154fc8b1df4828') in 0.0392018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b70bad69b23d13cb52eb6cf329c93c55 DependenciesID=67fbcb2b8141e7e4e08e96633e569d6b StaticDependenciesID=b5198c4278c27bf062ec698670496074 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/33.png
-  importAddress: Guid(ac04cf23a54fe56478c2b22b92e171c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Panels/33.png using Guid(ac04cf23a54fe56478c2b22b92e171c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c384fc8dd023f1adeb4e9c2569aee8cf') in 0.0364697 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=60df3daf2edd3c7a2de8a3547ffcf46f DependenciesID=26ea467e1b55f1dae4b17b9475eff1d7 StaticDependenciesID=6ebf1192130efe387ad60155afd764a0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Restart3.png
-  importAddress: Guid(b201d31c042c7734bb0f89ae54dae608) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Restart3.png using Guid(b201d31c042c7734bb0f89ae54dae608) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '931ad2565faf7dae5d1e10782300869e') in 0.0384249 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c726eb7452a25e52e83f05c6bf85b118 DependenciesID=14e89778d98086abd41f431c36811133 StaticDependenciesID=ed7ce8453927ccbc7ad857d0ad5963af 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings5.png
-  importAddress: Guid(629fc7eae00b14143a8be24558f8bfda) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Settings5.png using Guid(629fc7eae00b14143a8be24558f8bfda) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '437051b98ee099d97ebac21e12d67508') in 0.0406433 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ab0c74ddb6fdb15df019537c7eadc4e DependenciesID=d1538c58f89e33697138072f23bc52e2 StaticDependenciesID=1296d4e72d0bab450ccfc3687e1c0001 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation3.png
-  importAddress: Guid(a9a546453bfd57242a1a0344207c1bf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Status/Imports/Gelzo/Fun Hyper Casual UI Pack - FREE/Sprites/Buttons/Exclamation3.png using Guid(a9a546453bfd57242a1a0344207c1bf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9a0eeadbcb440a7d52825422b3c46c49') in 0.0343652 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ba759e9fe37a195c45735cf907abe56 DependenciesID=03b3d83669a67f48ab930a335c065f3d StaticDependenciesID=df519034b538a0eb34795457e8f5a2a3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Unloading 8894 unused Assets / (5.0 MB). Loaded Objects now: 9672.
+Memory consumption went from 182.1 MB to 177.1 MB.
+Total: 10.558600 ms (FindLiveObjects: 1.554700 ms CreateObjectMapping: 0.444900 ms MarkObjects: 6.318700 ms  DeleteObjects: 2.237900 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

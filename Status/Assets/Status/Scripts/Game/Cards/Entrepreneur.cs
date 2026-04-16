@@ -6,5 +6,6 @@ public class Entrepreneur : Card
     public override void CardAbility(Player player, Player Rival)
     {
         player.CurrentRole = Role.Entrepreneur;
+        PlayerData.instance.UpdateStatus(player, player.CurrentRole);
     }
 }

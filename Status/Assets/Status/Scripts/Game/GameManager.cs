@@ -4,9 +4,20 @@ using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+public enum GameState
+{
+    Setup,
+    Draw,
+    PlayerTurn,
+    AITurn,
+    WheelSpin,
+    Playing
+}
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public GameState CurrentState;
 
     public Player Me;
     public Player AI;
@@ -23,10 +34,22 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-       Me.InitialDraw();
-       AI.InitialDraw();
+        StartCoroutine(Game());
     }
+    public IEnumerator Game()
+    {
+        CurrentState = GameState.Setup;
+        yield return StartCoroutine(SetupGame());
 
+        CurrentState = GameState.PlayerTurn;
+
+    }
+    public IEnumerator SetupGame()
+    {
+        yield return StartCoroutine(Me.InitialDraw());
+        yield return StartCoroutine(AI.InitialDraw());
+
+    }
     public void AITurn(Player player)
     {
         StartCoroutine(AITurnWait(player));
@@ -34,35 +57,47 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator AITurnWait(Player player)
     {
-        
+        if (GameManager.instance.CurrentState == GameState.WheelSpin)
+        {
+            yield return new WaitUntil(() => GameManager.instance.CurrentState != GameState.WheelSpin);
+        }
+
+
         if (RoundNumber > 1)
         {
-             AI.DrawCard();
-           
+            
+            yield return StartCoroutine(AI.DrawCard());
         }
-     
 
-        yield return new WaitForSeconds(5f);
+       
+        yield return new WaitForSeconds(1.5f);
 
+       
         if (AI.Hand.Count == 0)
         {
-            RoundNumber++;
-            AI.Playing = false;
-            Me.DrawCard();
+            yield return StartCoroutine(EndAITurn());
             yield break;
         }
 
-        if (AI.Hand.Count > 0)
-        {
-            int RandomPlay = Random.Range(0, AI.Hand.Count);
-            Card RandomChoice = AI.Hand[RandomPlay];
-            AI.PlayCard(RandomChoice, player);
-        }
+       
+        int RandomPlay = Random.Range(0, AI.Hand.Count);
+        Card RandomChoice = AI.Hand[RandomPlay];
 
+        
+        AI.PlayCard(RandomChoice, Me);
+
+        yield return new WaitForSeconds(2f);
+
+        yield return StartCoroutine(EndAITurn());
+    }
+
+   
+    public IEnumerator EndAITurn()
+    {
+        
         RoundNumber++;
-
-        AI.Playing = false;
-        Me.DrawCard();
+        yield return StartCoroutine(UIManager.Instance.NewRound(RoundNumber));
+        StartCoroutine(Me.DrawCard());
     }
 
     public Card DeckDraw()
@@ -90,6 +125,11 @@ public class GameManager : MonoBehaviour
             Deck[i] = Deck[RandomIndex];
             Deck[RandomIndex] = ShuffledCard;
         }
+    }
+
+    public void ChangeState(GameState NewState)
+    {
+        CurrentState = NewState;
     }
     
 }

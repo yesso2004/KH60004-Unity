@@ -5,7 +5,7 @@ using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Extensions;
 using TMPro;
-using UnityEditor.VersionControl;
+
 
 public class FireBaseAuthManager : MonoBehaviour
 {

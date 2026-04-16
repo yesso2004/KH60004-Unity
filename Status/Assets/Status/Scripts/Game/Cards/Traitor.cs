@@ -5,11 +5,14 @@ public class Traitor : Card
 {
     public override void CardAbility(Player player, Player Rival)
     {
+
     
             if (player.Hand.Count == 0)
             {
                 player.CurrentRole = Role.Unemployed;
+                PlayerData.instance.UpdateStatus(player,player.CurrentRole);
                 player.StatusPoints -= 500;
+                PlayerData.instance.UpdateAmount(player, player.StatusPoints);
                 return;
             }
             if (player.Hand.Count == 1)
@@ -18,6 +21,7 @@ public class Traitor : Card
                 UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(LostCard, player));
                 player.Hand.Remove(LostCard);
                 player.StatusPoints -= 150;
+                PlayerData.instance.UpdateAmount(player, player.StatusPoints);
                 Debug.Log("Traitor has removed the card "+ LostCard + "Player: " + player.Name);
                 return;
             }

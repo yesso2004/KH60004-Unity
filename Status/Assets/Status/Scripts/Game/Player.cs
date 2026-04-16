@@ -17,48 +17,87 @@ public class Player:MonoBehaviour
     public int StatusPoints;
     public List<Card> Hand =  new List<Card>();
     public Role CurrentRole = Role.Unemployed;
-    public bool Playing = false;
+   
 
-    
-    public void InitialDraw()
+
+    public IEnumerator InitialDraw()
     {
         for (int i = 0; i < 3; i++)
         {
             Card DrawnCard = GameManager.instance.DeckDraw();
-            if (DrawnCard.CardType == CardTypes.Penalty)
+
+
+            if (DrawnCard == null)
             {
-                continue;
+                yield break;
             }
+
+            yield return StartCoroutine(DrawCardShowcase.instance.PlayerDrawCards(DrawnCard, this));
+
+            if (DrawnCard == null || DrawnCard.CardType == CardTypes.Penalty) continue;
+
             Hand.Add(DrawnCard);
             UIManager.Instance.DsiplayCard(DrawnCard, this);
         }
     }
 
-    public void DrawCard()
+    public IEnumerator DrawCard()
     {
-     
+
+        GameManager.instance.CurrentState = GameState.Draw;
+
         for (int i = 0; i < 2; i++)
         {
-            
+            if (GameManager.instance.CurrentState == GameState.WheelSpin)
+            {
+                yield return new WaitUntil(() => GameManager.instance.CurrentState != GameState.WheelSpin);
+            }
+
             if (Hand.Count >= 5)
             {
                 Card DiscardedCard = DiscardCard();
-                UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(DiscardedCard, this));
+                yield return UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(DiscardedCard, this));
             }
             Card DrawnCard = GameManager.instance.DeckDraw();
+            
 
             if (DrawnCard ==  null)
             {
+                Debug.LogError("Null Card detected");
                 break;
+            }
+
+            yield return StartCoroutine(DrawCardShowcase.instance.PlayerDrawCards(DrawnCard, this));
+
+            if (DrawnCard.CardType == CardTypes.Penalty)
+            {
+                DrawnCard.CardAbility(this, this);
+                continue;
             }
 
             Hand.Add(DrawnCard);
             UIManager.Instance.DsiplayCard(DrawnCard, this);
 
-            if (DrawnCard.CardType == CardTypes.Penalty)
+            yield return new WaitForSeconds(2f);
+        }
+
+        if (this == GameManager.instance.Me)
+        {
+            
+            if (Hand.Count == 0)
             {
-                StartCoroutine(DelayedPenalty(DrawnCard));
+                GameManager.instance.CurrentState = GameState.AITurn;
+                GameManager.instance.AITurn(this);
             }
+            else
+            {
+                GameManager.instance.CurrentState = GameState.PlayerTurn;
+            }
+        }
+        else if (this == GameManager.instance.AI)
+        {
+
+            GameManager.instance.CurrentState = GameState.AITurn;
         }
     }
 
@@ -77,46 +116,31 @@ public class Player:MonoBehaviour
     public void PlayCard(Card PlayedCard,Player Rival)
     {
 
-        if (this == GameManager.instance.Me && GameManager.instance.AI.Playing == true)
+        if (this == GameManager.instance.Me && GameManager.instance.CurrentState != GameState.Playing)
         {
             return;
         }
 
-        if (this == GameManager.instance.Me && this.Hand.Count == 0)
+        if (Hand.Contains(PlayedCard))
         {
-            GameManager.instance.AI.Playing = true;
-            GameManager.instance.AITurn(Rival);
-        }
-
-            if (Hand.Contains(PlayedCard))
-        {
-            PlayedCard.CardAbility(this, Rival);
-            UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(PlayedCard, this));
-            Hand.Remove(PlayedCard);
-
-            if (this == GameManager.instance.Me)
-            {
-                GameManager.instance.AI.Playing = true;
-                GameManager.instance.AITurn(Rival);
-            }
-        }
-
+           Hand.Remove(PlayedCard);
+           PlayedCard.CardAbility(this, Rival);
+            StartCoroutine(PlayWait(PlayedCard));
+        } 
+            
     }
 
-    private IEnumerator DelayedPenalty(Card PenaltyCard)
+    public IEnumerator PlayWait(Card PlayedCard)
     {
-        
-        yield return new WaitForSeconds(1.5f);
 
+        yield return UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(PlayedCard, this));
         
-        if (Hand.Contains(PenaltyCard))
+        if (this == GameManager.instance.Me)
         {
-            PenaltyCard.CardAbility(this, this);
-            UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(PenaltyCard, this));
-            Hand.Remove(PenaltyCard);
+            GameManager.instance.CurrentState = GameState.AITurn;
+            GameManager.instance.AITurn(this);
         }
     }
-
 
 }
 

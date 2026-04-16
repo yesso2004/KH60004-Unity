@@ -51,7 +51,8 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -65,7 +66,8 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -77,9 +79,21 @@
             "icon": null
           },
           {
+            "name": "AudioMixer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "AudioResource",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -108,7 +122,8 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -128,7 +143,8 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -148,7 +164,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -162,7 +179,8 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -194,7 +212,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -226,8 +245,15 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "LineRenderer",
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -240,7 +266,8 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -266,7 +293,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -280,7 +308,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -288,7 +317,8 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -326,7 +356,8 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -340,7 +371,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -372,7 +404,8 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -398,7 +431,8 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -455,6 +489,12 @@
             "name": "TimeManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "TrailRenderer",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1736,7 +1776,8 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1808,7 +1849,8 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1816,7 +1858,8 @@
           {
             "name": "CanvasGroup",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1824,7 +1867,8 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Status/Scenes/Option.unity"
+              "Assets/Status/Scenes/Menu.unity",
+              "Assets/Status/Scenes/StatusGame.unity"
             ],
             "dependencyType": 0,
             "icon": null

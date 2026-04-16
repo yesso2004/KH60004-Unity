@@ -11,5 +11,7 @@ public class Felony : Card
         }
 
         player.StatusPoints -= 1000;
+        PlayerData.instance.UpdateAmount(player, player.StatusPoints);
+
     }
 }

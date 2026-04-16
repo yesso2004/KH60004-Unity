@@ -1,14 +1,21 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UIManager : MonoBehaviour
 {
     
     public static UIManager Instance;
 
+   
     public GameObject CardPrefab;
     public Transform PlayerHandZone;
     public Transform AIHandZone;
+
+    public TextMeshProUGUI RoundNumberTxt;
+    public Image StatusLogo;
 
     private void Awake()
     {
@@ -81,6 +88,7 @@ public class UIManager : MonoBehaviour
 
         if (CardVanish != null)
         {
+        
 
             if (player == GameManager.instance.AI && DataScript != null)
             {
@@ -97,6 +105,11 @@ public class UIManager : MonoBehaviour
 
             while (DurationTime < Duration)
             {
+                if (CardVanish == null)
+                {
+                    break;
+                }
+
                 DurationTime += Time.deltaTime;
                 float Percent = DurationTime / Duration;
 
@@ -117,11 +130,37 @@ public class UIManager : MonoBehaviour
                 yield return null;
             }
 
-           Destroy(CardVanish.gameObject);
+            if (CardVanish != null)
+            {
+                Destroy(CardVanish.gameObject);
+            }
         }
         else
         {
             Debug.LogError("Couldnt find card");
         }
     }
+
+
+    public IEnumerator NewRound(int RoundNumber)
+    {
+        
+        RoundNumberTxt.text = $"Round: {RoundNumber}";
+        RoundNumberTxt.gameObject.SetActive(true);
+
+       
+        StartCoroutine(FadeManager.Instance.FadeOut(StatusLogo.gameObject));
+        yield return StartCoroutine(FadeManager.Instance.FadeIn(RoundNumberTxt.gameObject));
+
+        
+        yield return new WaitForSeconds(1.5f);
+
+        
+        StartCoroutine(FadeManager.Instance.FadeIn(StatusLogo.gameObject));
+        yield return StartCoroutine(FadeManager.Instance.FadeOut(RoundNumberTxt.gameObject));
+
+        
+        RoundNumberTxt.gameObject.SetActive(false);
+    }
+
 }

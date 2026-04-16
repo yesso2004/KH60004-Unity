@@ -7,5 +7,6 @@ public class Tax : Card
     {
         int TaxAmount = Mathf.RoundToInt(player.StatusPoints * 0.15f);
         player.StatusPoints -= TaxAmount;
+        PlayerData.instance.UpdateAmount(player, player.StatusPoints);
     }
 }

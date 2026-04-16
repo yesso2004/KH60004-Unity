@@ -1,15 +1,23 @@
 using System.Collections;
 using UnityEngine;
 
+
 public class FadeManager:MonoBehaviour
 {
     public static FadeManager Instance;
 
     void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); 
+        }
     }
-    
+
     public IEnumerator FadeIn(GameObject Panel)
     {
         Panel.SetActive(true);
@@ -80,4 +88,6 @@ public class FadeManager:MonoBehaviour
             
         Panel.SetActive(false);
     }
+
+
 }

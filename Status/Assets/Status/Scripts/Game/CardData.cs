@@ -7,7 +7,6 @@ public class CardData : MonoBehaviour , IPointerClickHandler
     public Card Data;
     private Image CardIMG;
     private bool Hidden = false;
-    private bool Played = false;
 
     void Awake()
     {
@@ -36,13 +35,15 @@ public class CardData : MonoBehaviour , IPointerClickHandler
 
     public void OnPointerClick(PointerEventData EventData)
     {
-        if (Hidden || Played)
+        if (GameManager.instance.CurrentState != GameState.PlayerTurn || Hidden)
         {
             return;
         }
 
-        Played = true;
+        GameManager.instance.CurrentState = GameState.Playing;
 
         GameManager.instance.Me.PlayCard(Data, GameManager.instance.AI);
+       
+
     }
 }
