@@ -24,11 +24,17 @@ public class GameManager : MonoBehaviour
     public List<Player> Players;
     public List<Card> Deck = new List<Card>();
     public int RoundNumber = 1;
-    
-    
+
     void Awake()
     {
         instance = this;
+        if (Me != null)
+        {
+            Me.Name = UserData.Username;
+            Me.Wins = UserData.Wins;
+            Me.Losses = UserData.Losses;
+        }
+
         Shuffle();
     }
 
@@ -38,6 +44,7 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator Game()
     {
+        yield return StartCoroutine(UIManager.Instance.NewRound());
         CurrentState = GameState.Setup;
         yield return StartCoroutine(SetupGame());
 
@@ -50,6 +57,8 @@ public class GameManager : MonoBehaviour
         yield return StartCoroutine(AI.InitialDraw());
 
     }
+
+
     public void AITurn(Player player)
     {
         StartCoroutine(AITurnWait(player));
@@ -94,9 +103,27 @@ public class GameManager : MonoBehaviour
    
     public IEnumerator EndAITurn()
     {
-        
         RoundNumber++;
-        yield return StartCoroutine(UIManager.Instance.NewRound(RoundNumber));
+
+
+        if (RoundNumber == 6)
+        {
+            bool Winner = (Me.StatusPoints > AI.StatusPoints) ? true : false;
+            yield return StartCoroutine(UIManager.Instance.FinishGame(Winner));
+            yield break;
+        }
+
+        if (RoundNumber == 5)
+        {
+            yield return StartCoroutine(UIManager.Instance.NewRound(true));
+
+        }
+        else
+        {
+            yield return StartCoroutine(UIManager.Instance.NewRound());
+
+        }
+
         StartCoroutine(Me.DrawCard());
     }
 

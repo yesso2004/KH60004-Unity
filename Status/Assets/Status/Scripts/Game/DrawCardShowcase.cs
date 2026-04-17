@@ -12,6 +12,7 @@ public class DrawCardShowcase : MonoBehaviour
     public Image DrawPanelBackground;
     public Image DrawnCardDisplay;
     public TextMeshProUGUI PlayerDrewTxt;
+    public TextMeshProUGUI CardAbilityTxt;
 
     private void Awake()
     {
@@ -26,11 +27,13 @@ public class DrawCardShowcase : MonoBehaviour
         {
             PlayerDrewTxt.text = $"{player.Name} Drew this card: ";
             DrawnCardDisplay.sprite = DrawnCard.CardSprite;
+            CardAbilityTxt.text = DrawnCard.CardDescription;
+
             DrawPanel.SetActive(true);
 
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
 
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(3f);
 
             if (DrawnCard.CardType == CardTypes.Penalty)
             {
@@ -59,6 +62,8 @@ public class DrawCardShowcase : MonoBehaviour
         {
             PlayerDrewTxt.text = $"{player.Name} Drew this card: ";
             DrawnCardDisplay.sprite = DrawnCard.CardHiddenSprite;
+            CardAbilityTxt.text = "Secret :)";
+            CardAbilityTxt.text = "Secret :)";
             DrawPanel.SetActive(true);
 
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
@@ -70,8 +75,6 @@ public class DrawCardShowcase : MonoBehaviour
                 float Duration = 1.0f;
                 float StartTime = 0f;
 
-
-                ;
                 Color TargetColor = new Color(0.8f, 0.1f, 0.1f, 1f);
 
                 while (StartTime < Duration)

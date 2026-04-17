@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.0f1 (8cf496087c8f) revision 9237654'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-16T23:53:03.8628295Z"
 OS: 'Windows 11  (10.0.26100) Professional' Language: 'en' Physical Memory: 16091 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-14T23:52:08Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo" at "2026-04-14T23:52:08.9193505Z"
+Date: 2026-04-16T23:53:03Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.0f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/medoo/OneDrive/Desktop/Status
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49920
+61877
 -licensingIpc
 LicenseClient-medoo
 -force-d3d12
@@ -68,12 +68,12 @@ C:/Users/medoo/OneDrive/Desktop/Status
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [35204]  Target information:
+Player connection [35752]  Target information:
 
-Player connection [35204]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 2198591194 [EditorId] 2198591194 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [35752]  * "[IP] 192.168.100.3 [Port] 0 [Flags] 2 [Guid] 1160513663 [EditorId] 1160513663 [Version] 1048832 [Id] WindowsEditor(7,SeifRami) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [35204] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [35204] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [35752] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35752] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -93,17 +93,17 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-medoo"
 [Licensing::IpcConnector] LicenseClient-medoo channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-14T23:52:09.8370207Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0" at "2026-04-16T23:53:04.6092717Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              d6bd102d4b644978b3e161c1f493f62c
-  Correlation Id:          e9d9d92b04277ad33cb0186f10bce708
-  External correlation Id: 6916158000637693618
+  Session Id:              fcb4be10305846539b22ae73ddb8434b
+  Correlation Id:          ab0d419b9043d9d4907903b17d9d759c
+  External correlation Id: 6673143578799119745
   Machine Id:              agf7rBPk51ccx3CzQra/GLhDOyE=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.01s, handshake: 0.99s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-14T23:52:10.8357584Z"
-[Licensing::Module] Licensing Background thread has ended after 1.93s
-[Licensing::Module] Licensing is initialized (took 1.51s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-medoo-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.69s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-medoo-6000.4.0-notifications" at "2026-04-16T23:53:05.2973705Z"
+[Licensing::Module] Licensing Background thread has ended after 1.43s
+[Licensing::Module] Licensing is initialized (took 1.03s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 11270634123586-UnityPersXXXX
@@ -112,7 +112,7 @@ Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
   Expiration: Unlimited
 Got setting from build profile YAML, name `m_BuildTarget`, value `13`
 Got setting from build profile YAML, name `m_Subtarget`, value `0`
-Refreshing native plugins compatible for Editor in 58.60 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 20.27 ms, found 7 plugins.
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/medoo/OneDrive/Desktop/Status/Assets
@@ -133,7 +133,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
 CodeReloadManager initialized
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
@@ -143,14 +143,14 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.009238 seconds.
+Registered in 0.060351 seconds.
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 335 ms
+Android Extension - Scanning For ADB Devices 761 ms
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -158,23 +158,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.757 seconds
-Domain Reload Profiling: 2912ms
-	BeginReloadAssembly (864ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (186ms)
-		LoadAssemblies (864ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (174ms)
-				TypeCache.ScanAssembly (162ms)
-	FinalizeReload (1757ms)
+- Finished resetting the current domain, in  2.453 seconds
+Domain Reload Profiling: 3664ms
+	BeginReloadAssembly (117ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (423ms)
+	LoadAllAssembliesAndSetupDomain (624ms)
+		LoadAssemblies (125ms)
+		AnalyzeDomain (603ms)
+			TypeCache.Refresh (602ms)
+				TypeCache.ScanAssembly (585ms)
+	FinalizeReload (2453ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (1430ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (89ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
+			InitializePlatformSupportModulesInManaged (1448ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (82ms)
+			ProcessInitializeOnLoadMethodAttributes (789ms)
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 Got setting from build profile YAML, name `m_BuildSubtarget`, value `0`
 ========================================================================
@@ -233,7 +233,7 @@ Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
 Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 6.29 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 20.47 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -245,140 +245,32 @@ Native extension for WindowsStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.879 seconds
-Domain Reload Profiling: 2981ms
-	BeginReloadAssembly (262ms)
-		DisableScriptedObjects (94ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (720ms)
-		LoadAssemblies (480ms)
-		AnalyzeDomain (317ms)
-			TypeCache.Refresh (212ms)
-				TypeCache.ScanAssembly (191ms)
-			BuildScriptInfoCaches (92ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1880ms)
+- Finished resetting the current domain, in  1.236 seconds
+Domain Reload Profiling: 6817ms
+	BeginReloadAssembly (4440ms)
+		DisableScriptedObjects (4235ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (1013ms)
+		LoadAssemblies (712ms)
+		AnalyzeDomain (393ms)
+			TypeCache.Refresh (254ms)
+				TypeCache.ScanAssembly (226ms)
+			BuildScriptInfoCaches (122ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1236ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			BeforeProcessingInitializeOnLoad (220ms)
-			ProcessInitializeOnLoadAttributes (816ms)
-			ProcessInitializeOnLoadMethodAttributes (589ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			BeforeProcessingInitializeOnLoad (227ms)
+			ProcessInitializeOnLoadAttributes (540ms)
+			ProcessInitializeOnLoadMethodAttributes (228ms)
+			AfterProcessingInitializeOnLoad (6ms)
 		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 5.14 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 3.83 ms, found 7 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8892 unused Assets / (5.9 MB). Loaded Objects now: 9690.
-Memory consumption went from 188.3 MB to 182.4 MB.
-Total: 8.770100 ms (FindLiveObjects: 1.498900 ms CreateObjectMapping: 0.392100 ms MarkObjects: 4.655200 ms  DeleteObjects: 2.221500 ms)
+Unloading 8894 unused Assets / (5.9 MB). Loaded Objects now: 9692.
+Memory consumption went from 188.9 MB to 183.0 MB.
+Total: 9.978000 ms (FindLiveObjects: 0.783400 ms CreateObjectMapping: 0.520800 ms MarkObjects: 5.628200 ms  DeleteObjects: 3.043800 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 20494.114665 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Buttons/Button Crimson.png
-  importAddress: Guid(43272f0dfaadc584f88bf5bb38daeecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Buttons/Button Crimson.png using Guid(43272f0dfaadc584f88bf5bb38daeecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c3e44c2b47185a97f3991b3fb2201d04') in 0.1299085 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd67846b715237675f5a5f93ffbd8245 DependenciesID=c4c673c4af22689f35dc152c60e0d1ba StaticDependenciesID=81f5a8efb69caf555eda08f0f73adff1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Buttons/Button Violet.png
-  importAddress: Guid(2204c5120d209e24b8d8473101c0670f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Buttons/Button Violet.png using Guid(2204c5120d209e24b8d8473101c0670f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3a7c6b95870cbdd25fe516f722f7c550') in 0.1089433 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e1133fa1a7cbf8cf1cdd74de71d3746 DependenciesID=276b1db94b51f4806fc3fe121aa368ea StaticDependenciesID=3dab1172bdcc40eb85a7d36553e67cee 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.619044 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Green.png
-  importAddress: Guid(61c69ee4216f9254eb98e9d4b2830aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Green.png using Guid(61c69ee4216f9254eb98e9d4b2830aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '02bb93203fc43370b4ae52279033b1e9') in 0.0521639 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=658b5d6832397ccc0816e956fbfc4ec1 DependenciesID=ae2e998421d47695c8143aec5db5077f StaticDependenciesID=b9ec7e95e5a15721c4555dc3998804fd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Style 2 Green.png
-  importAddress: Guid(76051ae65406d234aad7799de589f22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Style 2 Green.png using Guid(76051ae65406d234aad7799de589f22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '809d1a3a9a616245a0642523875f3ce8') in 0.1186854 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c2db9d82979adc58f41605d8d24343ee DependenciesID=25979290a902754a5f6058abf9a618a2 StaticDependenciesID=1729d04b550f144ab2c16ef3c44aea49 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Red.png
-  importAddress: Guid(a9af6f756a1fd544cb3e5fa671ffc232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Panels/White Panel Red.png using Guid(a9af6f756a1fd544cb3e5fa671ffc232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a1546eec48f29c943f8b3d8937f552cb') in 0.0723682 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e212e79b628435eb53951aa2a58f641 DependenciesID=6df2afeb65d4eae0cd9f9958fdfad055 StaticDependenciesID=cab69c116124c73eda9fdb60048bc990 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.643594 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Prefab/Login.prefab
-  importAddress: Guid(8de9e4070f9532640a3f874b810ce4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Prefab/Login.prefab using Guid(8de9e4070f9532640a3f874b810ce4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8e2d5c38516d3d94ab7b9ac20bb8919c') in 0.0717355 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d478823aa0b06f5f071dc60255f05185 DependenciesID=5060d5df6c409a2b5615dd339fb2e32e StaticDependenciesID=ac936c98979613639814b3fe613c83b8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Prefab/Store.prefab
-  importAddress: Guid(ef94f707182732b4fb45389fc2da750f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Prefab/Store.prefab using Guid(ef94f707182732b4fb45389fc2da750f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '537711ce1cbc0404b2f11d5554fb636e') in 0.0712144 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c1ab21ccfd5068e36960380a9727510 DependenciesID=c1a1473a478e7b05c472b725ef07627e StaticDependenciesID=312a7481844ff0d022fe01b18d468da0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 173
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.812186 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Blue.png
-  importAddress: Guid(6119f52e1327e7142ace21eddd69fe50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Blue.png using Guid(6119f52e1327e7142ace21eddd69fe50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '08650c18c68dee3ad22ff487e802632c') in 0.0558089 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fc60eac66e475242fca27eb589b0ebc9 DependenciesID=339b3d576e42362bfcb4b630a876a56d StaticDependenciesID=ae604ec0e5f3b16f877c033fcd78d7b1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Yellow.png
-  importAddress: Guid(b67c53ee68dad3640b6698ae3135ffd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Progress Bars/Progress Bar Yellow.png using Guid(b67c53ee68dad3640b6698ae3135ffd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'adb52e5499d8c7593bd0a8c291a043c7') in 0.0770611 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5237e0ad8947f77e5a975349d1fe82ec DependenciesID=8a8b756f0c8c56dc52536f8bfe595744 StaticDependenciesID=871dd7348ee3af12204fe639cd205908 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.192732 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Blue.png
-  importAddress: Guid(f65f5ba5c7649ab4e82dd2a91a3e6d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Blue.png using Guid(f65f5ba5c7649ab4e82dd2a91a3e6d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '527bfa65daf15fd99108179b807ee689') in 0.041452 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=945eb04d3ec8ee644ea3bba977c88165 DependenciesID=8560c37b8fe5fd020d90448c74988903 StaticDependenciesID=d1b2a46be09e69149125f9820445845c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Violet.png
-  importAddress: Guid(f8d9fa4aa387eed45849d848b837bc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Switch/Switch On Violet.png using Guid(f8d9fa4aa387eed45849d848b837bc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5e8007bc9d3b58d5e7ffb0b167389c51') in 0.0884502 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa4bd032f0f3dbe854c72040be88e42c DependenciesID=702d0a3988ba644b52ac3c60fd6d4326 StaticDependenciesID=6b3531f77360096ddd63f0ac623e99c9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.222174 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Blue.png
-  importAddress: Guid(096850a21c881704988ae721d4033773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Blue.png using Guid(096850a21c881704988ae721d4033773) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4acbfc8df9fe9a7950878fd66301819f') in 0.0385316 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=044810510ccc8cb8c7945cf6639a93af DependenciesID=a17bc7361b444f541de2499285ba584c StaticDependenciesID=e4bc43bb11120b7236cd205e6d1214a3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Yellow.png
-  importAddress: Guid(a97da46e2d41bc6468895a250dec00db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Status/Imports/Violet Theme Ui/Toggles/Toggle Fill Yellow.png using Guid(a97da46e2d41bc6468895a250dec00db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5b7d4fa8ace4b5e2108ce859dc2b4ead') in 0.0760667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5dcddc85d314fd0fefad5df986d774c1 DependenciesID=9f896db7d416d26afbfc026c2e0f8d9a StaticDependenciesID=4a9a5e8f3fed371e9cf9107e6f26730c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

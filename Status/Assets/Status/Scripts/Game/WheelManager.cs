@@ -18,14 +18,14 @@ private void Awake()
     Instance = this;
 }
 
-public void LoanChance(Player Human)
+public void LoanChance(Player player)
 {
-    StartCoroutine(LoanRoll(Human));
+    StartCoroutine(LoanRoll(player));
 }
 
-public void OffenseChance(Player Human)
+public void OffenseChance(Player player)
 {
-    StartCoroutine(OffenseRoll(Human));
+    StartCoroutine(OffenseRoll(player));
 }
 
 public IEnumerator LoanRoll(Player player)
@@ -33,7 +33,7 @@ public IEnumerator LoanRoll(Player player)
     GameState PreviousState = GameManager.instance.CurrentState;
     GameManager.instance.CurrentState = GameState.WheelSpin;
 
-    yield return new WaitForSeconds(3f);
+    yield return new WaitForSeconds(1f);
     WheelPanel.SetActive(true);
 
     Number = Random.Range(1, 11);
@@ -78,7 +78,7 @@ public IEnumerator LoanRoll(Player player)
         GameState PreviousState = GameManager.instance.CurrentState;
         GameManager.instance.CurrentState = GameState.WheelSpin;
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         WheelPanel.SetActive(true);
 
         Number = Random.Range(1, 11);

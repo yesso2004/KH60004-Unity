@@ -107,6 +107,7 @@
     <Compile Include="Assets\Status\Scripts\Game\UIManager.cs" />
     <Compile Include="Assets\Status\Scripts\Game\CardData.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Status\Scripts\Functions\AudioManager.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Compensate.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Loan.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Tax.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Status\Scripts\Game\EasterEgg.cs" />
     <Compile Include="Assets\Status\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Theft.cs" />
     <Compile Include="Assets\Status\Scripts\Game\Cards\Frame.cs" />

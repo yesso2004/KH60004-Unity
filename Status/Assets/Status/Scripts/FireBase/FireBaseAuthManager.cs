@@ -10,26 +10,29 @@ using TMPro;
 public class FireBaseAuthManager : MonoBehaviour
 {
     
-private FirebaseAuth Auth;
-private DatabaseReference DBRef;
+    private FirebaseAuth Auth;
+    private DatabaseReference DBRef;
 
-[SerializeField] private  TMP_InputField RegistrationName;
-[SerializeField] private  TMP_InputField RegistrationEmail;
-[SerializeField] private  TMP_InputField RegistrationPassword;
-[SerializeField] private  TMP_InputField RegistrationConfirmPassword;
-[SerializeField] private TextMeshProUGUI RegisterWarningMessage;
+    [SerializeField] private  TMP_InputField RegistrationName;
+    [SerializeField] private  TMP_InputField RegistrationEmail;
+    [SerializeField] private  TMP_InputField RegistrationPassword;
+    [SerializeField] private  TMP_InputField RegistrationConfirmPassword;
+    [SerializeField] private TextMeshProUGUI RegisterWarningMessage;
 
-[SerializeField] private  TMP_InputField EmailSignIn;
-[SerializeField] private TMP_InputField PasswordSignIn;
-[SerializeField] private  TextMeshProUGUI SignInWarningMessage;
+    [SerializeField] private  TMP_InputField EmailSignIn;
+    [SerializeField] private TMP_InputField PasswordSignIn;
+    [SerializeField] private  TextMeshProUGUI SignInWarningMessage;
 
-[SerializeField] private GameObject SelectPanel;
-[SerializeField] private GameObject RegisterPanel;
-[SerializeField] private GameObject SignInPanel;
-[SerializeField] private GameObject PlayMenu;
-[SerializeField] private GameObject SuccessScreen;
+    [SerializeField] private GameObject SelectPanel;
+    [SerializeField] private GameObject RegisterPanel;
+    [SerializeField] private GameObject SignInPanel;
+    [SerializeField] private GameObject PlayMenu;
+    [SerializeField] private GameObject SuccessScreen;
 
-[SerializeField] private TextMeshProUGUI DisplayName; 
+    [SerializeField] private TextMeshProUGUI DisplayName;
+
+    [SerializeField] private TextMeshProUGUI DisplayWinsTxt;
+    [SerializeField] private TextMeshProUGUI DisplayLossesTxt;
     private void ClearRegistration()
     {
     RegistrationName.text = "";
@@ -49,7 +52,12 @@ private DatabaseReference DBRef;
     {
         Auth = FirebaseAuth.DefaultInstance;
         DBRef =  FirebaseDatabase.DefaultInstance.RootReference;
+
+        DisplayName.text = UserData.Username;
+        DisplayWinsTxt.text = UserData.Wins.ToString();
+        DisplayLossesTxt.text = UserData.Losses.ToString();
     }
+
 
     public void Register()
     {
@@ -182,6 +190,8 @@ private DatabaseReference DBRef;
                 {
                     DataSnapshot snapshot = DBTask.Result;
                     DisplayName.text = snapshot.Child("Username").Value.ToString();
+                    DisplayWinsTxt.text = snapshot.Child("Wins").Value.ToString();
+                    DisplayLossesTxt.text = snapshot.Child("Losses").Value.ToString();
 
                     UserData.Username = snapshot.Child("Username").Value.ToString();
                     UserData.Wins = System.Convert.ToInt32(snapshot.Child("Wins").Value);
