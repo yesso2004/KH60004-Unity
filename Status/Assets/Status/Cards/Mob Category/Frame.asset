@@ -15,7 +15,7 @@ MonoBehaviour:
   CardName: Frame
   CardDescription: Player forces his rival to draw a punishment card (Of- fense,
     Tax, Felony).
-  CardType: 2
+  CardType: 0
   CardSprite: {fileID: -5668518402485374812, guid: 68e5b2cbe72b6b04c973981806d0e9ed, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}
   PenaltyCards:

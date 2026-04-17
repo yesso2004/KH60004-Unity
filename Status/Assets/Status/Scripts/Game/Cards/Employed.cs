@@ -8,8 +8,10 @@ public class Employed : Card
         if (player.CurrentRole == Role.Entrepreneur)
         {
             player.StatusPoints += 350;
+            PlayerData.instance.UpdateAmount(player, player.StatusPoints);
             return;
         }
         player.CurrentRole = Role.Employed;
+        PlayerData.instance.UpdateStatus(player, player.CurrentRole);
     }
 }

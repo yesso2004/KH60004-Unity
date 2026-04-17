@@ -8,14 +8,17 @@ public class Paycheck : Card
      if (player.CurrentRole == Role.Unemployed)
         {
             player.StatusPoints += 50;
+            PlayerData.instance.UpdateAmount(player, player.StatusPoints);
         }
-     if (player.CurrentRole == Role.Employed)
+        if (player.CurrentRole == Role.Employed)
         {
             player.StatusPoints += 350;
+            PlayerData.instance.UpdateAmount(player, player.StatusPoints);
         }
-     if (player.CurrentRole == Role.Entrepreneur)
+        if (player.CurrentRole == Role.Entrepreneur)
         {
             player.StatusPoints += 500;
+            PlayerData.instance.UpdateAmount(player, player.StatusPoints);
         }
     }
 }

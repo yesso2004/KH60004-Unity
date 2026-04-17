@@ -5,7 +5,7 @@ using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Extensions;
 using TMPro;
-using UnityEditor.VersionControl;
+
 
 public class FireBaseAuthManager : MonoBehaviour
 {
@@ -182,6 +182,10 @@ private DatabaseReference DBRef;
                 {
                     DataSnapshot snapshot = DBTask.Result;
                     DisplayName.text = snapshot.Child("Username").Value.ToString();
+
+                    UserData.Username = snapshot.Child("Username").Value.ToString();
+                    UserData.Wins = System.Convert.ToInt32(snapshot.Child("Wins").Value);
+                    UserData.Losses = System.Convert.ToInt32(snapshot.Child("Losses").Value);
                     Debug.Log("Successfully Retrieved!: "+snapshot.Child("Username").Value.ToString());
                 }
                 else if (DBTask.IsFaulted || DBTask.IsCanceled)
