@@ -1,6 +1,9 @@
+using Firebase.Auth;
+using Firebase.Database;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -10,12 +13,15 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
 
    
-    public GameObject CardPrefab;
-    public Transform PlayerHandZone;
-    public Transform AIHandZone;
+    [SerializeField] private GameObject CardPrefab;
+    [SerializeField] private Transform PlayerHandZone;
+    [SerializeField] private Transform AIHandZone;
 
-    public TextMeshProUGUI RoundNumberTxt;
-    public Image StatusLogo;
+    [SerializeField] private TextMeshProUGUI RoundNumberTxt;
+    [SerializeField] private Image StatusLogo;
+
+    [SerializeField] private GameObject EndScreen;
+    [SerializeField] private TextMeshProUGUI EndTitleTxt;
 
     private void Awake()
     {
@@ -57,7 +63,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public IEnumerator DiscardCard(Card DiscardedCard,Player player) 
+    public IEnumerator DiscardCard(Card DiscardedCard,Player player,CardData PhysicalCard = null) 
     {
         Transform TargetedHand = null;
 
@@ -73,34 +79,46 @@ public class UIManager : MonoBehaviour
         Transform CardVanish = null;
         CanvasGroup CardCG = null;
         CardData DataScript = null;
-        foreach (Transform Card in TargetedHand)
-        {
-            CardData CardScript = Card.GetComponent<CardData>();
 
-            if (CardScript != null && CardScript.Data == DiscardedCard)
+      
+        
+            if (PhysicalCard != null)
             {
-                CardVanish = Card;
-                CardCG = Card.GetComponent<CanvasGroup>();
-                DataScript = CardScript;
-                break;
-            }    
-        }
+                CardVanish = PhysicalCard.transform;
+                CardCG = PhysicalCard.GetComponent<CanvasGroup>();
+                DataScript = PhysicalCard;
+            }
+            else 
+            {
+                foreach (Transform Card in TargetedHand)
+                {
+                    CardData CardScript = Card.GetComponent<CardData>();
+
+                    if (CardScript != null && CardScript.Data == DiscardedCard)
+                    {
+                        CardVanish = Card;
+                        CardCG = Card.GetComponent<CanvasGroup>();
+                        DataScript = CardScript;
+                        break;
+                    }
+                }
+            }
 
         if (CardVanish != null)
         {
-        
+
 
             if (player == GameManager.instance.AI && DataScript != null)
             {
-                DataScript.DisplayCards(DiscardedCard,false);
+                DataScript.DisplayCards(DiscardedCard, false);
 
             }
-     
+
             float Duration = 2f;
             float DurationTime = 0f;
 
-            Vector2 StartPosition =  CardVanish.transform.localPosition;
-            Vector2 EndPosition = StartPosition + new Vector2(0,100);
+            Vector2 StartPosition = CardVanish.transform.localPosition;
+            Vector2 EndPosition = StartPosition + new Vector2(0, 100);
             Vector2 AIEndPosition = StartPosition + new Vector2(0, -100);
 
             while (DurationTime < Duration)
@@ -142,25 +160,84 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public IEnumerator NewRound(int RoundNumber)
+    public IEnumerator NewRound(bool EndGame = false)
     {
-        
-        RoundNumberTxt.text = $"Round: {RoundNumber}";
+
+        if (EndGame == false)
+        {
+            RoundNumberTxt.text = $"Round: {GameManager.instance.RoundNumber}";
+        }
+        else
+        {
+            RoundNumberTxt.color = new Color(0.8f, 0.1f, 0.1f, 1f);
+            RoundNumberTxt.text = $"EndGame";
+            AudioManager.Instance.EndGame();
+        }
+
+        yield return StartCoroutine(ShowRoundDetails());
+
+    }
+
+    private IEnumerator ShowRoundDetails()
+    {
         RoundNumberTxt.gameObject.SetActive(true);
 
-       
-        StartCoroutine(FadeManager.Instance.FadeOut(StatusLogo.gameObject));
+
+        yield return StartCoroutine(FadeManager.Instance.FadeOut(StatusLogo.gameObject));
         yield return StartCoroutine(FadeManager.Instance.FadeIn(RoundNumberTxt.gameObject));
 
-        
         yield return new WaitForSeconds(1.5f);
 
-        
         StartCoroutine(FadeManager.Instance.FadeIn(StatusLogo.gameObject));
         yield return StartCoroutine(FadeManager.Instance.FadeOut(RoundNumberTxt.gameObject));
 
-        
+
         RoundNumberTxt.gameObject.SetActive(false);
     }
 
+    public IEnumerator FinishGame(bool Winner)
+    {
+        if (Winner == true)
+        {
+            EndTitleTxt.text = "Winner";
+            GameManager.instance.Me.Wins++;
+            AudioManager.Instance.WinAudio();
+        }
+        else
+        {
+            EndTitleTxt.text = "Loser";
+            GameManager.instance.Me.Losses++;
+            AudioManager.Instance.LoseAudio();
+        }
+
+        yield return StartCoroutine(FadeManager.Instance.FadeIn(EndScreen));
+
+        yield return new WaitForSeconds(3.5f);
+
+        FirebaseUser CurrentUser = FirebaseAuth.DefaultInstance.CurrentUser;
+
+        if (CurrentUser != null)
+        {
+
+            DatabaseReference DBRef = FirebaseDatabase.DefaultInstance.RootReference;
+
+
+            var UserDB = DBRef.Child("user").Child(CurrentUser.UserId);
+
+
+            UserDB.Child("Wins").SetValueAsync(GameManager.instance.Me.Wins);
+            UserDB.Child("Losses").SetValueAsync(GameManager.instance.Me.Losses);
+
+            UserData.Wins = GameManager.instance.Me.Wins;
+            UserData.Losses = GameManager.instance.Me.Losses;
+
+        }
+        else
+        {
+            Debug.LogError("Failed to save data.");
+        }
+
+        SceneManager.LoadScene("Menu");
+
+    }
 }

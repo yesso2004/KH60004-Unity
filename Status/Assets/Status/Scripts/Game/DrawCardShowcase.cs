@@ -12,6 +12,7 @@ public class DrawCardShowcase : MonoBehaviour
     public Image DrawPanelBackground;
     public Image DrawnCardDisplay;
     public TextMeshProUGUI PlayerDrewTxt;
+    public TextMeshProUGUI CardAbilityTxt;
 
     private void Awake()
     {
@@ -26,11 +27,14 @@ public class DrawCardShowcase : MonoBehaviour
         {
             PlayerDrewTxt.text = $"{player.Name} Drew this card: ";
             DrawnCardDisplay.sprite = DrawnCard.CardSprite;
+            CardAbilityTxt.text = DrawnCard.CardDescription;
+
             DrawPanel.SetActive(true);
 
+            AudioManager.Instance.DrawSound();
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
 
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(3f);
 
             if (DrawnCard.CardType == CardTypes.Penalty)
             {
@@ -45,6 +49,7 @@ public class DrawCardShowcase : MonoBehaviour
                     StartTime += Time.deltaTime;
                     float percent = StartTime / Duration;
 
+                    AudioManager.Instance.PenaltySound();
                     DrawPanelBackground.color = Color.Lerp(StartColor, TargetColor, percent);
 
                     yield return null;
@@ -59,8 +64,11 @@ public class DrawCardShowcase : MonoBehaviour
         {
             PlayerDrewTxt.text = $"{player.Name} Drew this card: ";
             DrawnCardDisplay.sprite = DrawnCard.CardHiddenSprite;
+            CardAbilityTxt.text = "Secret :)";
+            CardAbilityTxt.text = "Secret :)";
             DrawPanel.SetActive(true);
 
+            AudioManager.Instance.DrawSound();
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
 
             yield return new WaitForSeconds(0.8f);
@@ -70,8 +78,6 @@ public class DrawCardShowcase : MonoBehaviour
                 float Duration = 1.0f;
                 float StartTime = 0f;
 
-
-                ;
                 Color TargetColor = new Color(0.8f, 0.1f, 0.1f, 1f);
 
                 while (StartTime < Duration)
@@ -79,6 +85,7 @@ public class DrawCardShowcase : MonoBehaviour
                     StartTime += Time.deltaTime;
                     float percent = StartTime / Duration;
 
+                    AudioManager.Instance.PenaltySound();
                     DrawPanelBackground.color = Color.Lerp(StartColor, TargetColor, percent);
 
                     yield return null;

@@ -18,8 +18,6 @@ public class Player:MonoBehaviour
     public List<Card> Hand =  new List<Card>();
     public Role CurrentRole = Role.Unemployed;
    
-
-
     public IEnumerator InitialDraw()
     {
         for (int i = 0; i < 3; i++)
@@ -29,12 +27,17 @@ public class Player:MonoBehaviour
 
             if (DrawnCard == null)
             {
+                Debug.LogError("(Null Card Detected)");
                 yield break;
             }
 
             yield return StartCoroutine(DrawCardShowcase.instance.PlayerDrawCards(DrawnCard, this));
 
-            if (DrawnCard == null || DrawnCard.CardType == CardTypes.Penalty) continue;
+            if (DrawnCard.CardType == CardTypes.Penalty)
+            {
+
+                continue;
+            }
 
             Hand.Add(DrawnCard);
             UIManager.Instance.DsiplayCard(DrawnCard, this);
@@ -58,8 +61,8 @@ public class Player:MonoBehaviour
                 Card DiscardedCard = DiscardCard();
                 yield return UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(DiscardedCard, this));
             }
+
             Card DrawnCard = GameManager.instance.DeckDraw();
-            
 
             if (DrawnCard ==  null)
             {
@@ -72,6 +75,10 @@ public class Player:MonoBehaviour
             if (DrawnCard.CardType == CardTypes.Penalty)
             {
                 DrawnCard.CardAbility(this, this);
+                if (GameManager.instance.CurrentState == GameState.WheelSpin)
+                {
+                    yield return new WaitUntil(() => GameManager.instance.CurrentState != GameState.WheelSpin);
+                }
                 continue;
             }
 
@@ -79,7 +86,7 @@ public class Player:MonoBehaviour
             UIManager.Instance.DsiplayCard(DrawnCard, this);
 
             yield return new WaitForSeconds(2f);
-        }
+        }   
 
         if (this == GameManager.instance.Me)
         {
@@ -101,7 +108,7 @@ public class Player:MonoBehaviour
         }
     }
 
-    public Card DiscardCard()
+    private Card DiscardCard()
     {
         if (Hand.Count > 0)
         {
@@ -113,7 +120,7 @@ public class Player:MonoBehaviour
         return null;
     }
 
-    public void PlayCard(Card PlayedCard,Player Rival)
+    public void PlayCard(Card PlayedCard,Player Rival, CardData UICard = null)
     {
 
         if (this == GameManager.instance.Me && GameManager.instance.CurrentState != GameState.Playing)
@@ -123,18 +130,24 @@ public class Player:MonoBehaviour
 
         if (Hand.Contains(PlayedCard))
         {
-           Hand.Remove(PlayedCard);
-           PlayedCard.CardAbility(this, Rival);
-            StartCoroutine(PlayWait(PlayedCard));
-        } 
-            
+            Hand.Remove(PlayedCard);
+            AudioManager.Instance.CardSound();
+            PlayedCard.CardAbility(this, Rival);
+            StartCoroutine(PlayWait(PlayedCard, UICard));
+
+        }
     }
 
-    public IEnumerator PlayWait(Card PlayedCard)
+    private IEnumerator PlayWait(Card PlayedCard,CardData UICard = null)
     {
 
-        yield return UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(PlayedCard, this));
-        
+        yield return UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(PlayedCard, this, UICard));
+
+        if (GameManager.instance.CurrentState == GameState.WheelSpin)
+        {
+            yield return new WaitUntil(() => GameManager.instance.CurrentState != GameState.WheelSpin);
+        }
+
         if (this == GameManager.instance.Me)
         {
             GameManager.instance.CurrentState = GameState.AITurn;
