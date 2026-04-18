@@ -5,7 +5,7 @@ public class Felony : Card
 {
     public override void CardAbility(Player player, Player Rival)
     {
-        if (GameManager.instance.RoundNumber <= 3)
+        if (GameManager.instance.RoundNumber <= 2)
         {
             return;
         }

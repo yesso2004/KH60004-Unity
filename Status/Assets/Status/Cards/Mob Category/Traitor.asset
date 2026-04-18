@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Traitor
   m_EditorClassIdentifier: Assembly-CSharp::Traitor
   CardName: Traitor
-  CardDescription: Force the player to lose two random cards from his hands.
+  CardDescription: Force the player to lose two random cards from his hands and if
+    no cards availible then apply fee.
   CardType: 2
   CardSprite: {fileID: -8569890226558640653, guid: 007a3323006418748be10972a395ce1c, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

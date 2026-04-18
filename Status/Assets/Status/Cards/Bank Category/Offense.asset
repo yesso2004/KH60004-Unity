@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Offense
   CardName: Offense
   CardDescription: there is a 50% chance that the Offense penalty will be 100 SP
-    and another 50% chance that the penalty will be 300 SP
+    and another 50% chance that the penalty will be 300 SP. (Win condition (>5))
   CardType: 2
   CardSprite: {fileID: 3492811925869965768, guid: 6ae2bc5dec2ba424292756b2b1d23bdb, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

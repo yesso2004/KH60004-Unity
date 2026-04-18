@@ -13,18 +13,20 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private TextMeshProUGUI AIPoints;
     [SerializeField] private TextMeshProUGUI AIStatus;
 
-    void Start()
+    private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
         PlayerName.text = GameManager.instance.Me.Name;
         PlayerPoints.text = GameManager.instance.Me.StatusPoints.ToString();
         PlayerStatus.text = GameManager.instance.Me.CurrentRole.ToString();
         AIName.text = GameManager.instance.AI.Name;
         AIPoints.text = GameManager.instance.AI.StatusPoints.ToString();
         AIStatus.text = GameManager.instance.AI.CurrentRole.ToString();
-
     }
-
 
     public void UpdateAmount(Player player,int Amount)
     {

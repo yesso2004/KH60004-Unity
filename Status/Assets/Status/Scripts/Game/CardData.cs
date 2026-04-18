@@ -8,7 +8,7 @@ public class CardData : MonoBehaviour , IPointerClickHandler
     private Image CardIMG;
     private bool Hidden = false;
 
-    void Awake()
+    private void Awake()
     {
         CardIMG = GetComponent<Image>();
     }

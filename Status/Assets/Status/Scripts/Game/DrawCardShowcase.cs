@@ -8,11 +8,11 @@ public class DrawCardShowcase : MonoBehaviour
 
     public static DrawCardShowcase instance;
 
-    public GameObject DrawPanel;
-    public Image DrawPanelBackground;
-    public Image DrawnCardDisplay;
-    public TextMeshProUGUI PlayerDrewTxt;
-    public TextMeshProUGUI CardAbilityTxt;
+    [SerializeField] private GameObject DrawPanel;
+    [SerializeField] private Image DrawPanelBackground;
+    [SerializeField] private Image DrawnCardDisplay;
+    [SerializeField] private TextMeshProUGUI PlayerDrewTxt;
+    [SerializeField] private TextMeshProUGUI CardAbilityTxt;
 
     private void Awake()
     {

@@ -4,8 +4,6 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-
-
     [SerializeField] private AudioSource AudioSource;
     [SerializeField] private AudioClip BasicButtonSound;
     [SerializeField] private AudioClip RegisterSound;

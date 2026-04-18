@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Felony
   m_EditorClassIdentifier: Assembly-CSharp::Felony
   CardName: Felony
-  CardDescription: Government forces the player to pay 1000 SP
+  CardDescription: Government forces the player to pay 1000 SP. Immunity for first
+    2 rounds
   CardType: 2
   CardSprite: {fileID: -2909822256971048865, guid: 0f1724460b266fe4a8ef21fbec98f00e, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

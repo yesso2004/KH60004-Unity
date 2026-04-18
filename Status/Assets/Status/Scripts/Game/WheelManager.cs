@@ -28,7 +28,7 @@ public void OffenseChance(Player player)
     StartCoroutine(OffenseRoll(player));
 }
 
-public IEnumerator LoanRoll(Player player)
+private IEnumerator LoanRoll(Player player)
 {
     GameState PreviousState = GameManager.instance.CurrentState;
     GameManager.instance.CurrentState = GameState.WheelSpin;
@@ -72,7 +72,7 @@ public IEnumerator LoanRoll(Player player)
 
     }
 
-    public IEnumerator OffenseRoll(Player player)
+    private IEnumerator OffenseRoll(Player player)
     {
 
         GameState PreviousState = GameManager.instance.CurrentState;

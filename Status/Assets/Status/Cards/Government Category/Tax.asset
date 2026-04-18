@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tax
   m_EditorClassIdentifier: Assembly-CSharp::Tax
   CardName: Tax
-  CardDescription: "Government deduct 15% SP tax from the player\u2019s full accoun."
+  CardDescription: "Government deduct 15% SP tax from the player\u2019s full account."
   CardType: 2
   CardSprite: {fileID: -3574048254806584545, guid: 92a0783c45bd88542bb4c8556ca93253, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}
