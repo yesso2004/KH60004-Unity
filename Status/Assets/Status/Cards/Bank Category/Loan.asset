@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Loan
   CardName: Loan
   CardDescription: The player pays 500 SP. There is a 40% chance of gaining 1000
-    SP and a 60% chance of losing the 500 SP initially paid.
+    SP and a 60% chance of losing the 500 SP initially paid. (Win condition (>6))
   CardType: 1
   CardSprite: {fileID: -9157707260727643407, guid: 57bda792808f2b34a82f940ff396637e, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}

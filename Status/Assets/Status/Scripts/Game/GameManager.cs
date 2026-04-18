@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,11 +20,10 @@ public class GameManager : MonoBehaviour
 
     public Player Me;
     public Player AI;
-    public List<Player> Players;
     public List<Card> Deck = new List<Card>();
     public int RoundNumber = 1;
 
-    void Awake()
+    private void Awake()
     {
         instance = this;
         if (Me != null)
@@ -42,7 +40,8 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(Game());
     }
-    public IEnumerator Game()
+
+    private IEnumerator Game()
     {
         yield return StartCoroutine(UIManager.Instance.NewRound());
         CurrentState = GameState.Setup;
@@ -51,7 +50,7 @@ public class GameManager : MonoBehaviour
         CurrentState = GameState.PlayerTurn;
 
     }
-    public IEnumerator SetupGame()
+    private IEnumerator SetupGame()
     {
         yield return StartCoroutine(Me.InitialDraw());
         yield return StartCoroutine(AI.InitialDraw());
@@ -64,11 +63,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(AITurnWait(player));
     }
 
-    public IEnumerator AITurnWait(Player player)
+    private IEnumerator AITurnWait(Player player)
     {
-        if (GameManager.instance.CurrentState == GameState.WheelSpin)
+        if (CurrentState == GameState.WheelSpin)
         {
-            yield return new WaitUntil(() => GameManager.instance.CurrentState != GameState.WheelSpin);
+            yield return new WaitUntil(() => CurrentState != GameState.WheelSpin);
         }
 
 
@@ -101,19 +100,19 @@ public class GameManager : MonoBehaviour
     }
 
    
-    public IEnumerator EndAITurn()
+    private IEnumerator EndAITurn()
     {
         RoundNumber++;
 
 
-        if (RoundNumber == 6)
+        if (RoundNumber == 5)
         {
             bool Winner = (Me.StatusPoints > AI.StatusPoints) ? true : false;
             yield return StartCoroutine(UIManager.Instance.FinishGame(Winner));
             yield break;
         }
 
-        if (RoundNumber == 5)
+        if (RoundNumber == 4)
         {
             yield return StartCoroutine(UIManager.Instance.NewRound(true));
 
@@ -143,7 +142,7 @@ public class GameManager : MonoBehaviour
         return DrawnCard;
     }
 
-    public void Shuffle()
+    private void Shuffle()
     {
         for (int i = 0; i < Deck.Count; i++)
         {

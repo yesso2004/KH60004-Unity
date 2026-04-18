@@ -27,12 +27,12 @@ public class Traitor : Card
             }
         for (int i = 0; i < 2; i++)
         {
-            
+
             int RandomIndex = Random.Range(0, player.Hand.Count);
             Card LostCard = player.Hand[RandomIndex];
+            player.Hand.RemoveAt(RandomIndex);
             UIManager.Instance.StartCoroutine(UIManager.Instance.DiscardCard(LostCard, player));
-            player.Hand.Remove(LostCard);
-            Debug.Log("Traitor has removed the card " + LostCard + "Player: " + player.Name);
+            Debug.Log("Traitor has removed the card " + LostCard.name + " from Player: " + player.Name);
 
         }
     }

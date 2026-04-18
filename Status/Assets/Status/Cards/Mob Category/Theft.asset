@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Theft
   m_EditorClassIdentifier: Assembly-CSharp::Theft
   CardName: Theft
-  CardDescription: Player can steal a random card from his rival.
+  CardDescription: Player can steal a random card from his rival and if card availibilty
+    is limitred then a fee is applied.
   CardType: 0
   CardSprite: {fileID: -7895229596764948996, guid: 28a0fb3fec78fd4448612941dd37d650, type: 3}
   CardHiddenSprite: {fileID: -5647821492762748048, guid: 6ccb4975a43583544826841f25ad34e9, type: 3}
