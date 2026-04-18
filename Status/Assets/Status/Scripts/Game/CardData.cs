@@ -41,9 +41,7 @@ public class CardData : MonoBehaviour , IPointerClickHandler
         }
 
         GameManager.instance.CurrentState = GameState.Playing;
-
         GameManager.instance.Me.PlayCard(Data, GameManager.instance.AI, this);
        
-
     }
 }

@@ -171,6 +171,7 @@ public class UIManager : MonoBehaviour
         {
             RoundNumberTxt.color = new Color(0.8f, 0.1f, 0.1f, 1f);
             RoundNumberTxt.text = $"EndGame";
+            AudioManager.Instance.EndGame();
         }
 
         yield return StartCoroutine(ShowRoundDetails());
@@ -200,13 +201,13 @@ public class UIManager : MonoBehaviour
         {
             EndTitleTxt.text = "Winner";
             GameManager.instance.Me.Wins++;
+            AudioManager.Instance.WinAudio();
         }
         else
         {
             EndTitleTxt.text = "Loser";
             GameManager.instance.Me.Losses++;
-
-
+            AudioManager.Instance.LoseAudio();
         }
 
         yield return StartCoroutine(FadeManager.Instance.FadeIn(EndScreen));

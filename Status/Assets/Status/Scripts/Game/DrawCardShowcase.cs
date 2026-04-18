@@ -31,6 +31,7 @@ public class DrawCardShowcase : MonoBehaviour
 
             DrawPanel.SetActive(true);
 
+            AudioManager.Instance.DrawSound();
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
 
             yield return new WaitForSeconds(3f);
@@ -48,6 +49,7 @@ public class DrawCardShowcase : MonoBehaviour
                     StartTime += Time.deltaTime;
                     float percent = StartTime / Duration;
 
+                    AudioManager.Instance.PenaltySound();
                     DrawPanelBackground.color = Color.Lerp(StartColor, TargetColor, percent);
 
                     yield return null;
@@ -66,6 +68,7 @@ public class DrawCardShowcase : MonoBehaviour
             CardAbilityTxt.text = "Secret :)";
             DrawPanel.SetActive(true);
 
+            AudioManager.Instance.DrawSound();
             yield return StartCoroutine(FadeManager.Instance.FadeIn(DrawPanel));
 
             yield return new WaitForSeconds(0.8f);
@@ -82,6 +85,7 @@ public class DrawCardShowcase : MonoBehaviour
                     StartTime += Time.deltaTime;
                     float percent = StartTime / Duration;
 
+                    AudioManager.Instance.PenaltySound();
                     DrawPanelBackground.color = Color.Lerp(StartColor, TargetColor, percent);
 
                     yield return null;

@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
         int RandomPlay = Random.Range(0, AI.Hand.Count);
         Card RandomChoice = AI.Hand[RandomPlay];
 
-        
+        AudioManager.Instance.CardSound();
         AI.PlayCard(RandomChoice, Me);
 
         yield return new WaitForSeconds(2f);
